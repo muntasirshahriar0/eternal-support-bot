@@ -1,4 +1,4 @@
-const { Client, GatewayIntentBits } = require("discord.js");
+const { Client, GatewayIntentBits, EmbedBuilder } = require("discord.js");
 const express = require("express");
 
 const app = express();
@@ -7,7 +7,7 @@ const app = express();
    KEEP RENDER ALIVE
 ========================= */
 app.get("/", (req, res) => {
-  res.send("Bot running");
+  res.send("Bot is running");
 });
 
 app.listen(process.env.PORT || 3000, () => {
@@ -15,7 +15,7 @@ app.listen(process.env.PORT || 3000, () => {
 });
 
 /* =========================
-   DISCORD CLIENT
+   BOT SETUP
 ========================= */
 const client = new Client({
   intents: [
@@ -26,39 +26,52 @@ const client = new Client({
 });
 
 /* =========================
-   READY
+   BANNER ONLY (NO LOGO)
+========================= */
+const BANNER =
+  "https://cdn.discordapp.com/attachments/1504463263872712924/1505517613483163690/WhatsApp_Image_2026-05-15_at_3.28.39_PM.jpeg?ex=6a0ce44a&is=6a0b92ca&hm=f686c621d35c45f0475c4f85773bd4242301b883299f9fc57af6525d1cfc9206&";
+
+/* =========================
+   READY EVENT
 ========================= */
 client.once("ready", () => {
   console.log(`${client.user.tag} is online!`);
 });
 
 /* =========================
-   MESSAGE COMMANDS
+   COMMANDS
 ========================= */
 client.on("messageCreate", async (message) => {
 
   if (message.author.bot) return;
 
+  const msg = message.content.toLowerCase().trim();
+
   /* =========================
      .PAY COMMAND
   ========================= */
-  if (message.content === ".pay") {
+  if (msg === ".pay") {
 
-    return message.channel.send(
-      "💰 **Payment Methods (Eternal SMP)**\n\n" +
-      "📱 **Bkash 1 (Personal → Personal):** 01741644334\n" +
-      "📱 **Bkash 2 (Agent / Personal → Personal):** 01768166414\n\n" +
-      "🛒 Send screenshot in support ticket after payment!"
-    );
+    const payEmbed = new EmbedBuilder()
+      .setColor("#8A2BE2")
+      .setTitle("💰 Eternal SMP Payment Methods")
+      .setImage(BANNER)
+      .setDescription(
+        "📱 **Bkash 1 (Personal → Personal)**\n`01741644334`\n\n" +
+        "📱 **Bkash 2 (Agent / Personal → Personal)**\n`01768166414`\n\n" +
+        "🛒 Send screenshot in support ticket after payment!"
+      )
+      .setTimestamp();
+
+    return message.channel.send({ embeds: [payEmbed] });
   }
 
   /* =========================
-     .RULES COMMAND
+     .RULES COMMAND (EXACT COPY)
   ========================= */
-  if (message.content === ".rules") {
+  if (msg === ".rules") {
 
-    return message.channel.send(`
-# 📜 Eternal SMP — Official Server Rules
+    const rulesText = `# 📜 Eternal SMP — Official Server Rules
 
 ━━━━━━━━━━━━━━
 
@@ -118,19 +131,19 @@ Trading in-game items, accounts, or services for real money outside the official
 
 ## 🛒 10. Store & Rank Purchase Policy
 
-• All purchases made through the official server store are final.
-• Purchased ranks, kits, or items will be delivered after successful payment verification.
-• Sharing or abusing paid perks may result in punishment or removal of perks.
-• Chargebacks or fraudulent payments will result in a permanent blacklist from the server and store.
+* All purchases made through the official server store are final.
+* Purchased ranks, kits, or items will be delivered after successful payment verification.
+* Sharing or abusing paid perks may result in punishment or removal of perks.
+* Chargebacks or fraudulent payments will result in a permanent blacklist from the server and store.
 
 ━━━━━━━━━━━━━━
 
 ## ❌ 11. Refund Policy
 
-• No refunds will be given after ranks, items, or perks are delivered.
-• Accidental purchases are the buyer’s responsibility.
-• Breaking server rules after purchasing does NOT make you eligible for a refund.
-• If you experience delivery issues, contact staff with valid proof.
+* No refunds will be given after ranks, items, or perks are delivered.
+* Accidental purchases are the buyer’s responsibility.
+* Breaking server rules after purchasing does NOT make you eligible for a refund.
+* If you experience delivery issues, contact staff with valid proof.
 
 ━━━━━━━━━━━━━━
 
@@ -138,11 +151,11 @@ Trading in-game items, accounts, or services for real money outside the official
 
 Punishments depend on the severity of the rule broken:
 
-• Warning
-• Mute
-• Kick
-• Temporary Ban
-• Permanent Ban
+* Warning
+* Mute
+* Kick
+* Temporary Ban
+* Permanent Ban
 
 Severe violations such as hacking, duping, scamming, or chargebacks may result in immediate permanent punishment without warning.
 
@@ -154,8 +167,16 @@ Not every situation can be covered by rules. Use common sense and respect staff 
 
 ━━━━━━━━━━━━━━
 
-🌟 Welcome to Eternal SMP — survive, build, and enjoy together! 🌟
-`);
+🌟 Welcome to Eternal SMP — survive, build, and enjoy together! 🌟`;
+
+    const rulesEmbed = new EmbedBuilder()
+      .setColor("#8A2BE2")
+      .setTitle("📜 Eternal SMP Official Rules")
+      .setImage(BANNER)
+      .setDescription(rulesText)
+      .setTimestamp();
+
+    return message.channel.send({ embeds: [rulesEmbed] });
   }
 
 });
