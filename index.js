@@ -286,9 +286,80 @@ Your support helps keep the server alive, balanced, and growing for the entire c
       })
       .setTimestamp();
 
-    return message.channel.send({
-      embeds: [embed]
-    });
+    return message.channel.send({ embeds: [embed] });
+  }
+
+  /* =========================
+     .RANK COMMAND
+  ========================= */
+  if (msg === ".rank") {
+
+    const embed = new EmbedBuilder()
+      .setColor(0x9B59B6)
+      .setTitle("🔥 ETERNAL SMP • Rank List")
+      .setDescription(`
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🔥 INFERNO – 120৳
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+💰 In-game Money: 500K  
+🏠 6 SetHomes  
+🛡️ Max Armor & Tools (Vanilla Without Enchants)  
+📦 8 Shulker  
+🍎 90 Golden Apple + 12 Enchanted Golden Apple  
+🐔 2 Spawner (Basic×1 & Combat×1)  
+
+⚡ Commands  
+/back /ptime /near /hat  
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🐉 HYDRA – 240৳
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+💰 750K Money  
+🏠 8 SetHomes  
+🛡️ Max Armor & Tools (Vanilla Max Enchants)  
+📦 10 Shulker  
+🍎 120 Golden Apple + 24 Enchanted Golden Apple  
+🐔 4 Spawner  
+
+⚡ Commands  
+/workbench /echest /feed /nick  
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+👑 EMPEROR – 320৳
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+💰 1M Money  
+🏠 10 SetHomes  
+⚔️ Vanilla Mace ×1  
+📦 12 Shulker  
+🍎 256 Golden Apple + 36 Enchanted Golden Apple  
+🐔 6 Spawner  
+
+⚡ Commands  
+/disposal /smithingtable /loom  
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🔥 PHOENIX – 420৳
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+💰 1.5M Money  
+🏠 12 SetHomes  
+🕊️ Elytra ×1  
+⚔️ Max Mace  
+📦 15 Shulker  
+🍎 320 Golden Apple + 48 Enchanted Golden Apple  
+🐔 8 Spawner  
+
+⚡ Commands  
+/heal /ext /night /anvil  
+      `)
+      .setImage(BANNER)
+      .setFooter({ text: "Eternal SMP Rank System" })
+      .setTimestamp();
+
+    return message.channel.send({ embeds: [embed] });
   }
 
 });
