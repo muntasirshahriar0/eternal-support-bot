@@ -1,4 +1,9 @@
-const { Client, GatewayIntentBits, EmbedBuilder } = require("discord.js");
+const {
+  Client,
+  GatewayIntentBits,
+  EmbedBuilder
+} = require("discord.js");
+
 const express = require("express");
 
 const app = express();
@@ -15,7 +20,13 @@ app.listen(process.env.PORT || 3000, () => {
 });
 
 /* =========================
-   BOT SETUP
+   BANNER
+========================= */
+const BANNER =
+  "https://cdn.discordapp.com/attachments/1504463263872712924/1505517613483163690/WhatsApp_Image_2026-05-15_at_3.28.39_PM.jpeg?ex=6a0ce44a&is=6a0b92ca&hm=f686c621d35c45f0475c4f85773bd4242301b883299f9fc57af6525d1cfc9206&";
+
+/* =========================
+   DISCORD CLIENT
 ========================= */
 const client = new Client({
   intents: [
@@ -26,20 +37,14 @@ const client = new Client({
 });
 
 /* =========================
-   BANNER ONLY (NO LOGO)
-========================= */
-const BANNER =
-  "https://cdn.discordapp.com/attachments/1504463263872712924/1505517613483163690/WhatsApp_Image_2026-05-15_at_3.28.39_PM.jpeg?ex=6a0ce44a&is=6a0b92ca&hm=f686c621d35c45f0475c4f85773bd4242301b883299f9fc57af6525d1cfc9206&";
-
-/* =========================
-   READY EVENT
+   READY
 ========================= */
 client.once("ready", () => {
   console.log(`${client.user.tag} is online!`);
 });
 
 /* =========================
-   COMMANDS
+   MESSAGE COMMANDS
 ========================= */
 client.on("messageCreate", async (message) => {
 
@@ -52,131 +57,181 @@ client.on("messageCreate", async (message) => {
   ========================= */
   if (msg === ".pay") {
 
-    const payEmbed = new EmbedBuilder()
-      .setColor("#8A2BE2")
+    const embed = new EmbedBuilder()
+      .setColor(0x9B59B6)
       .setTitle("💰 Eternal SMP Payment Methods")
-      .setImage(BANNER)
       .setDescription(
-        "📱 **Bkash 1 (Personal → Personal)**\n`01741644334`\n\n" +
-        "📱 **Bkash 2 (Agent / Personal → Personal)**\n`01768166414`\n\n" +
+        "📱 **Bkash 1 (Personal → Personal):** 01741644334\n\n" +
+        "📱 **Bkash 2 (Agent / Personal → Personal):** 01768166414\n\n" +
         "🛒 Send screenshot in support ticket after payment!"
       )
+      .setImage(BANNER)
+      .setFooter({
+        text: "Eternal SMP Store"
+      })
       .setTimestamp();
 
-    return message.channel.send({ embeds: [payEmbed] });
+    return message.channel.send({
+      embeds: [embed]
+    });
   }
 
   /* =========================
-     .RULES COMMAND (EXACT COPY)
+     .RULES COMMAND
   ========================= */
   if (msg === ".rules") {
 
-    const rulesText = `# 📜 Eternal SMP — Official Server Rules
+    const embed = new EmbedBuilder()
+      .setColor(0x9B59B6)
+      .setTitle("📜 Eternal SMP — Official Server Rules")
+      .setDescription(`
+━━━━━━━━━━━━━━
+
+💬 **1. Chat Rules**
+Keep the chat clean, friendly, and respectful.
 
 ━━━━━━━━━━━━━━
 
-## 💬 1. Chat Rules
-
-Keep the chat clean, friendly, and respectful. Toxicity, harassment, hate speech, discrimination, excessive swearing, spam, or inappropriate behavior is strictly prohibited.
-
-━━━━━━━━━━━━━━
-
-## 🎮 2. Fair Gameplay
-
-Using cheats, hacks, x-ray, auto-clickers, exploits, dupes, modified clients, or any unfair advantages is not allowed. Play fairly and respect the survival experience.
+🎮 **2. Fair Gameplay**
+No cheats, hacks, x-ray, exploits, or unfair advantages.
 
 ━━━━━━━━━━━━━━
 
-## 🏡 3. Community & Server Balance
-
-Help keep the server enjoyable for everyone. Griefing, trolling, stealing, trapping players, intentionally ruining builds, or disturbing the community is not allowed.
-
-━━━━━━━━━━━━━━
-
-## 🚫 4. Banned Farms & Lag Machines
-
-Do not build farms, redstone machines, chunk loaders, or structures that may cause excessive lag or harm server performance. Staff may remove lag-causing builds without warning.
+🏡 **3. Community & Server Balance**
+No griefing, stealing, trapping, or ruining builds.
 
 ━━━━━━━━━━━━━━
 
-## 📢 5. Proper Channel Usage
-
-Use channels correctly and avoid unnecessary spam, advertising, or disruptive behavior. Keep conversations meaningful and respectful.
-
-━━━━━━━━━━━━━━
-
-## 🎖️ 6. No Begging
-
-Do not beg for ranks, items, money, permissions, staff roles, or special treatment from staff or players.
+🚫 **4. Banned Farms & Lag Machines**
+No lag machines or harmful redstone builds.
 
 ━━━━━━━━━━━━━━
 
-## 🛡️ 7. Follow Discord Guidelines
-
-All members must follow the official Discord Community Guidelines and Terms of Service at all times.
-
-━━━━━━━━━━━━━━
-
-## 🎤 8. Voice Chat Rules
-
-Keep VC conversations friendly and appropriate. Mic spam, earrape, excessive background noise, harassment, or disturbing others is not allowed.
+📢 **5. Proper Channel Usage**
+Use channels correctly and avoid spam.
 
 ━━━━━━━━━━━━━━
 
-## 💸 9. No Real Money Trading
-
-Trading in-game items, accounts, or services for real money outside the official server store is strictly prohibited.
-
-━━━━━━━━━━━━━━
-
-## 🛒 10. Store & Rank Purchase Policy
-
-* All purchases made through the official server store are final.
-* Purchased ranks, kits, or items will be delivered after successful payment verification.
-* Sharing or abusing paid perks may result in punishment or removal of perks.
-* Chargebacks or fraudulent payments will result in a permanent blacklist from the server and store.
+🎖️ **6. No Begging**
+Do not beg for ranks, items, or staff roles.
 
 ━━━━━━━━━━━━━━
 
-## ❌ 11. Refund Policy
-
-* No refunds will be given after ranks, items, or perks are delivered.
-* Accidental purchases are the buyer’s responsibility.
-* Breaking server rules after purchasing does NOT make you eligible for a refund.
-* If you experience delivery issues, contact staff with valid proof.
+🛡️ **7. Follow Discord Guidelines**
+All members must follow Discord ToS.
 
 ━━━━━━━━━━━━━━
 
-## ⚖️ 12. Punishment System
-
-Punishments depend on the severity of the rule broken:
-
-* Warning
-* Mute
-* Kick
-* Temporary Ban
-* Permanent Ban
-
-Severe violations such as hacking, duping, scamming, or chargebacks may result in immediate permanent punishment without warning.
+🎤 **8. Voice Chat Rules**
+No mic spam, earrape, or harassment.
 
 ━━━━━━━━━━━━━━
 
-## 🧠 13. Use Common Sense
-
-Not every situation can be covered by rules. Use common sense and respect staff decisions to help maintain a positive and fair community.
+💸 **9. No Real Money Trading**
+No IRL trading outside official store.
 
 ━━━━━━━━━━━━━━
 
-🌟 Welcome to Eternal SMP — survive, build, and enjoy together! 🌟`;
+🛒 **10. Store Policy**
+All purchases are final.
 
-    const rulesEmbed = new EmbedBuilder()
-      .setColor("#8A2BE2")
-      .setTitle("📜 Eternal SMP Official Rules")
+━━━━━━━━━━━━━━
+
+❌ **11. Refund Policy**
+No refunds after delivery.
+
+━━━━━━━━━━━━━━
+
+⚖️ **12. Punishments**
+Warning → Mute → Kick → Ban
+
+━━━━━━━━━━━━━━
+
+🧠 **13. Use Common Sense**
+Respect staff and community.
+
+━━━━━━━━━━━━━━
+
+🌟 Welcome to Eternal SMP 🌟
+`)
       .setImage(BANNER)
-      .setDescription(rulesText)
+      .setFooter({
+        text: "Eternal SMP Rules"
+      })
       .setTimestamp();
 
-    return message.channel.send({ embeds: [rulesEmbed] });
+    return message.channel.send({
+      embeds: [embed]
+    });
+  }
+
+  /* =========================
+     .TAC COMMAND
+  ========================= */
+  if (msg === ".tac") {
+
+    const embed = new EmbedBuilder()
+      .setColor(0x9B59B6)
+      .setTitle("🛒 Eternal SMP • Store Terms")
+      .setDescription(`
+━━━━━━━━━━━━━━━━━━━━━━
+
+Purchasing any Rank, Package, Crate, or Digital Item from the Eternal SMP Store means you agree to all terms and conditions listed below.
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+⚖ **Legal Disclaimer**
+Eternal SMP is not affiliated with Mojang or Microsoft.
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+💳 **Payments & Purchases**
+• Digital products only  
+• Supports server development  
+• No refunds  
+• Chargebacks may result in blacklist
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+🎖 **Ranks & Perks**
+• Ranks may change depending on product  
+• Perks can be balanced anytime  
+• Rule violations may remove perks
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+🖥 **Server Availability**
+• Downtime may occur  
+• Server systems may change anytime
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+🔒 **Account Responsibility**
+Players are responsible for account security.
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+⚠ **Item Loss Policy**
+Lost items may not be restored.
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+✅ **Agreement**
+Purchasing means you accept all terms and rules.
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+🔥 Thank You for Supporting Eternal SMP
+`)
+      .setImage(BANNER)
+      .setFooter({
+        text: "Eternal SMP Store Terms"
+      })
+      .setTimestamp();
+
+    return message.channel.send({
+      embeds: [embed]
+    });
   }
 
 });
