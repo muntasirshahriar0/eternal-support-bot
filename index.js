@@ -361,6 +361,85 @@ Your support helps keep the server alive, balanced, and growing for the entire c
 
     return message.channel.send({ embeds: [embed] });
   }
+  
+/* =========================
+.SPAWNER COMMAND
+========================= */
+if (msg === ".spawner") {
+
+const embed = new EmbedBuilder()
+.setColor(0x9B59B6)
+.setTitle("🛒 ETERNAL SMP • Spawner Shop")
+.setDescription(`
+━━━━━━━━━━━━━━━━━━━━━━
+
+🐷 BASIC SPAWNERS – 20৳ (Per Piece)
+
+🐖 Pig
+🐄 Cow
+🐔 Chicken
+🐑 Sheep
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+⚔️ COMBAT SPAWNERS – 30৳ (Per Piece)
+
+🧟 Zombie
+🕷️ Spider
+💀 Skeleton
+🌊 Guardian
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+🔥 ADVANCED SPAWNERS – 40৳ (Per Piece)
+
+👁️ Enderman
+🟢 Slime
+🌋 Magma Cube
+💣 Creeper
+🔥 Blaze
+🐷⚔️ Zombified Piglin (Gold Farming)
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+✨ SPECIAL SPAWNERS – 50৳ (Per Piece)
+
+🤖 Iron Golem (Iron Farming)
+👻 Ghast (Ghast Tears & Gunpowder)
+🌪️ Breeze (Breeze Rod)
+💀🔥 Wither Skeleton (Wither Skulls & Coal)
+📦 Shulker
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+⚠️ Balance Notice
+
+High-tier spawners are limited and may be adjusted for server balance.
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+📝 Note:
+
+• Spawner list & prices may change anytime for balance
+• Some spawners may be limited
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+🛍️ How to Buy:
+
+• Open a ticket in the support channel
+• Tell staff which spawner you want
+
+━━━━━━━━━━━━━━━━━━━━━━
+`)
+.setImage(BANNER)
+.setFooter({
+text: "Eternal SMP Spawner Shop"
+})
+.setTimestamp();
+
+return message.channel.send({
+embeds: [embed]
 
 });
 
