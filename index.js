@@ -23,7 +23,7 @@ app.listen(process.env.PORT || 3000, () => {
    BANNER
 ========================= */
 const BANNER =
-  "https://cdn.discordapp.com/attachments/1504463263872712924/1505517613483163690/WhatsApp_Image_2026-05-15_at_3.28.39_PM.jpeg?ex=6a0ce44a&is=6a0b92ca&hm=f686c621d35c45f0475c4f85773bd4242301b883299f9fc57af6525d1cfc9206&";
+  "https://cdn.discordapp.com/attachments/1504463263872712924/1506664881494163586/IMG_20260520_202725.jpg?ex=6a0f1684&is=6a0dc504&hm=1139d198bfa82b602c38540e91c0b78c36f932a1d688b9b44596b41ef2a41eb5";
 
 /* =========================
    DISCORD CLIENT
