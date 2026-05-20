@@ -362,15 +362,15 @@ Your support helps keep the server alive, balanced, and growing for the entire c
     return message.channel.send({ embeds: [embed] });
   }
   
-/* =========================
-.SPAWNER COMMAND
-========================= */
-if (msg === ".spawner") {
+  /* =========================
+  .SPAWNER COMMAND
+  ========================= */
+  if (msg === ".spawner") {
 
-const embed = new EmbedBuilder()
-.setColor(0x9B59B6)
-.setTitle("🛒 ETERNAL SMP • Spawner Shop")
-.setDescription(`
+    const embed = new EmbedBuilder()
+      .setColor(0x9B59B6)
+      .setTitle("🛒 ETERNAL SMP • Spawner Shop")
+      .setDescription(`
 ━━━━━━━━━━━━━━━━━━━━━━
 
 🐷 BASIC SPAWNERS – 20৳ (Per Piece)
@@ -429,19 +429,24 @@ High-tier spawners are limited and may be adjusted for server balance.
 
 • Open a ticket in the support channel
 • Tell staff which spawner you want
-
-━━━━━━━━━━━━━━━━━━━━━━
 `)
-.setImage(BANNER)
-.setFooter({
-text: "Eternal SMP Spawner Shop"
-})
-.setTimestamp();
+      .setImage(BANNER)
+      .setFooter({
+        text: "Eternal SMP Spawner Shop"
+      })
+      .setTimestamp();
 
-return message.channel.send({
-embeds: [embed]
+    return message.channel.send({
+      embeds: [embed]
+    });
+  }
 
-});
+}); 
+
+/* =========================
+   LOGIN
+========================= */
+client.login(process.env.DISCORD_TOKEN);
 
 /* =========================
    LOGIN
