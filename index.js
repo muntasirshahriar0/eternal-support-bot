@@ -82,7 +82,7 @@ client.on("messageCreate", async (message) => {
   if (msg === ".rules") {
 
     const embed = new EmbedBuilder()
-      .setColor(#8A2BE2)
+      .setColor(0x9B59B6)
       .setTitle("📜 Eternal SMP — Official Server Rules")
       .setDescription(`
 # 📜 Eternal SMP — Official Server Rules
