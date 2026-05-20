@@ -430,10 +430,6 @@ High-tier spawners are limited and may be adjusted for server balance.
 
 }); 
 
-/* =========================
-   LOGIN
-========================= */
-client.login(process.env.DISCORD_TOKEN);
 
 /* =========================
    LOGIN
