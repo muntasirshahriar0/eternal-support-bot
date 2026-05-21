@@ -291,10 +291,10 @@ Your support helps keep the server alive, balanced, and growing for the entire c
 
 💰 In-game Money: 500K  
 🏠 6 SetHomes  
-🛡️ Max Armor & Tools (Vanilla Without Enchants)  
+🛡️ Armor & Tools (Vanilla Without Enchants)  
 📦 8 Shulker  
 🍎 90 Golden Apple + 12 Enchanted Golden Apple  
-🐔 2 Spawner (Basic×1 & Combat×1)  
+🐔 2 Spawner / 4 Crate-Keys (Only One)  
 
 ⚡ Commands  
 /back /ptime /near /hat  
@@ -305,12 +305,12 @@ Your support helps keep the server alive, balanced, and growing for the entire c
 
 💰 750K Money  
 🏠 8 SetHomes  
-🛡️ Max Armor & Tools (Vanilla Max Enchants)  
+🛡️ Armor & Tools (Vanilla Max Enchants)  
 📦 10 Shulker  
 🍎 120 Golden Apple + 24 Enchanted Golden Apple  
-🐔 4 Spawner  
+🐔 4 Spawner / 6 Crate-Keys (Only One) 
 
-⚡ Commands  
+⚡ INFERNO Commands + 
 /workbench /echest /feed /nick  
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -319,12 +319,13 @@ Your support helps keep the server alive, balanced, and growing for the entire c
 
 💰 1M Money  
 🏠 10 SetHomes  
-⚔️ Vanilla Mace ×1  
+⚔️ Vanilla Mace ×1 
+🛡️ Custom Gear (Limited)
 📦 12 Shulker  
 🍎 256 Golden Apple + 36 Enchanted Golden Apple  
-🐔 6 Spawner  
+🐔 6 Spawner / 8 Crate-Keys (Only One) 
 
-⚡ Commands  
+⚡ HYDRA Commands +  
 /disposal /smithingtable /loom  
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -335,11 +336,12 @@ Your support helps keep the server alive, balanced, and growing for the entire c
 🏠 12 SetHomes  
 🕊️ Elytra ×1  
 ⚔️ Max Mace  
+🛡️ Full max-custom gear
 📦 15 Shulker  
 🍎 320 Golden Apple + 48 Enchanted Golden Apple  
-🐔 8 Spawner  
+🐔 8 Spawner / 10 Crate-Keys (Only One) 
 
-⚡ Commands  
+⚡ EMPEROR Commands +  
 /heal /ext /night /anvil  
       `)
       .setImage(BANNER)
