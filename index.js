@@ -64,9 +64,9 @@ client.on("messageCreate", async (message) => {
       .setColor(0x8600FF)
       .setTitle("💰 Eternal SMP Payment Methods")
       .setDescription(
-        "📱 **Bkash 1 (Personal → Personal):** 01741644334\n\n" +
-        "📱 **Bkash 2 (Agent / Personal → Personal):** 01768166414\n\n" +
-        "🛒 Send screenshot in support ticket after payment!"
+        "**<a:arrow:1507782135212150845> Bkash 1 (Personal → Personal):** 01741644334\n\n" +
+        "**<a:arrow:1507782135212150845> Bkash 2 (Agent / Personal → Personal):** 01768166414\n\n" +
+        "<:shop:1507752817400611027> Send screenshot in support ticket after payment!"
       )
       .setThumbnail(THUMBNAIL)
       .setImage(BANNER)
@@ -188,13 +188,13 @@ client.on("messageCreate", async (message) => {
       .setColor(0x8600FF)
       .setDescription(`
 ━━━━━━━━━━━━━━━━━━━━━━
-<:shoppie:1507809836421873725> Eternal SMP • Store Terms
+**<:shoppie:1507809836421873725> Eternal SMP • Store Terms**
 ━━━━━━━━━━━━━━━━━━━━━━
 
 <a:red_arrow:1507787736554410126> Purchasing any Rank, Package, Crate, or Digital Item from the Eternal SMP Store means you agree to all terms and conditions listed below.
 
 ━━━━━━━━━━━━━━━━━━━━━━
-<a:announcement_a:1507790462210281482> Legal Disclaimer
+**<a:announcement_a:1507790462210281482> Legal Disclaimer**
 ━━━━━━━━━━━━━━━━━━━━━━
 
 <a:red_arrow:1507787736554410126> Eternal SMP is an independent Minecraft community and is not affiliated with, endorsed by, or associated with Mojang Studios, Microsoft, or Minecraft.
@@ -202,7 +202,7 @@ client.on("messageCreate", async (message) => {
 <a:red_arrow:1507787736554410126> All purchases are voluntary contributions made to support the server, community, and future development.
 
 ━━━━━━━━━━━━━━━━━━━━━━
-<a:moneyyyy:1507792459974054118> Payments & Purchases
+**<a:moneyyyy:1507792459974054118> Payments & Purchases**
 ━━━━━━━━━━━━━━━━━━━━━━
 
 <a:arrow:1507782135212150845> Digital Products
@@ -218,7 +218,7 @@ All purchases are final and non-refundable once payment has been successfully co
 Any chargeback, payment dispute, or fraudulent transaction may result in permanent suspension from Eternal SMP, including loss of all purchased items and store access.
 
 ━━━━━━━━━━━━━━━━━━━━━━
-<a:crown_a:1507791684208033842> Ranks & Perks
+**<a:crown_a:1507791684208033842> Ranks & Perks**
 ━━━━━━━━━━━━━━━━━━━━━━
 
 <a:arrow:1507782135212150845> Rank Duration
@@ -231,7 +231,7 @@ To maintain fair gameplay and server balance, rank perks, commands, or bonuses m
 Breaking server or Discord rules may result in warnings, suspensions, permanent bans, or removal of purchased perks without refund.
 
 ━━━━━━━━━━━━━━━━━━━━━━
-<a:online:1507791786943447173> Server Availability
+**<a:online:1507791786943447173> Server Availability**
 ━━━━━━━━━━━━━━━━━━━━━━
 
 <a:arrow:1507782135212150845> Maintenance & Downtime
@@ -241,7 +241,7 @@ The server may occasionally experience downtime due to maintenance, updates, tec
 Eternal SMP reserves the right to modify gameplay systems, economy features, ranks, plugins, worlds, or server mechanics at any time to improve the community experience.
 
 ━━━━━━━━━━━━━━━━━━━━━━
-<a:disclaimer_a:1507787788526026852> Account Responsibility
+**<a:disclaimer_a:1507787788526026852> Account Responsibility**
 ━━━━━━━━━━━━━━━━━━━━━━
 
 <a:red_arrow:1507787736554410126> Players are fully responsible for the security and ownership of their Minecraft and Discord accounts.
@@ -249,7 +249,7 @@ Eternal SMP reserves the right to modify gameplay systems, economy features, ran
 <a:red_arrow:1507787736554410126> Eternal SMP is not responsible for lost, stolen, hacked, or shared accounts.
 
 ━━━━━━━━━━━━━━━━━━━━━━
-<a:disclaimer_a:1507787788526026852> Item Loss Policy
+**<a:disclaimer_a:1507787788526026852> Item Loss Policy**
 ━━━━━━━━━━━━━━━━━━━━━━
 
 <a:red_arrow:1507787736554410126> Some items, kits, or rewards may be limited or non-renewable.
@@ -257,14 +257,14 @@ Eternal SMP reserves the right to modify gameplay systems, economy features, ran
 <a:red_arrow:1507787736554410126> Lost items caused by death, PvP, clearing inventories, glitches, or player mistakes will generally not be restored unless approved by staff under exceptional circumstances.
 
 ━━━━━━━━━━━━━━━━━━━━━━
-<:damn:1507752860643885076> Agreement
+**<:damn:1507752860643885076> Agreement**
 ━━━━━━━━━━━━━━━━━━━━━━
 
 <a:red_arrow:1507787736554410126> By completing a purchase from the Eternal SMP Store, you confirm that you have read, understood, and accepted all Store Terms and Server Rules.
 
 ━━━━━━━━━━━━━━━━━━━━━━
-<a:fire_a0:1507790340067950794> Thank You for Supporting Eternal SMP
-Your support helps keep the server alive, balanced, and growing for the entire community. <a:fire_a0:1507790340067950794> 
+**<a:fire_a0:1507790340067950794> Thank You for Supporting Eternal SMP
+Your support helps keep the server alive, balanced, and growing for the entire community. <a:fire_a0:1507790340067950794>**
 ━━━━━━━━━━━━━━━━━━━━━━
 `)
       .setThumbnail(THUMBNAIL)
@@ -287,63 +287,98 @@ Your support helps keep the server alive, balanced, and growing for the entire c
       .setTitle("🔥 ETERNAL SMP • Rank List")
       .setDescription(`
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-🔥 KNIGHT – 120৳
+**<:shield_0:1507754792334790757> KNIGHT <:shield_0:1507754792334790757>** 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-💰 In-game Money: 500K  
-🏠 6 SetHomes  
-🛡️ Armor & Tools (Vanilla Without Enchants)  
-📦 8 Shulker  
-🍎 90 Golden Apple + 12 Enchanted Golden Apple  
-🐔 2 Spawner / 4 Crate-Keys (Only One)  
+<a:moneyyyy:1507792459974054118>  In-game Money: 500K  
+<a:red_arrow:1507787736554410126> 6 SetHomes  
+<a:red_arrow:1507787736554410126> KNIGHT ARMOR (Vanilla Without Enchants) Tools (Vanilla Without Enchants) 
+<a:red_arrow:1507787736554410126> KNIGHT TOOLS (Vanilla Without Enchants)
+<a:red_arrow:1507787736554410126> 6 Shulker  
+<a:red_arrow:1507787736554410126> 90 Golden Apple + 12 Enchanted Golden Apple  
+<a:red_arrow:1507787736554410126> Limited Trims Collection
+<a:red_arrow:1507787736554410126> 2 Spawner / 4 Crate-Keys (Only One)  
 
 ⚡ Commands  
 /back /ptime /near /hat  
 
+**<a:moneyyyy:1507792459974054118> PRICE – 120৳**
+
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-🐉 HYDRA – 220৳
+**<a:twinkle_twinkle:1507788149030392000> HYDRA <a:twinkle_twinkle:1507788149030392000>**
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-💰 750K Money  
-🏠 8 SetHomes  
-🛡️ Armor & Tools (Vanilla Max Enchants)  
-📦 10 Shulker  
-🍎 120 Golden Apple + 24 Enchanted Golden Apple  
-🐔 4 Spawner / 6 Crate-Keys (Only One) 
+<a:moneyyyy:1507792459974054118>  In-game Money: 750K Money  
+<a:red_arrow:1507787736554410126> 8 SetHomes  
+<a:red_arrow:1507787736554410126> HYDRA ARMOR (Vanilla Max Enchants) 
+<a:red_arrow:1507787736554410126> HYDRA TOOLS (Vanilla Max Enchants)  
+<a:red_arrow:1507787736554410126> 10 Shulker  
+<a:red_arrow:1507787736554410126> 120 Golden Apple + 24 Enchanted Golden Apple  
+<a:red_arrow:1507787736554410126> Limited Trims Collection
+<a:red_arrow:1507787736554410126> 4 Spawner / 6 Crate-Keys (Only One) 
 
 ⚡ KNIGHT Commands + 
-/workbench /echest /feed /nick  
+/workbench /echest /feed /nick 
+
+**<a:moneyyyy:1507792459974054118> PRICE – 220৳**
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-👑 EMPEROR – 320৳
+**<a:fire_a0:1507790340067950794> EMPEROR <a:fire_a0:1507790340067950794>**
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-💰 1M Money  
-🏠 10 SetHomes  
-⚔️ Vanilla Mace ×1 
-🛡️ Custom Gear (Limited)
-📦 12 Shulker  
-🍎 256 Golden Apple + 36 Enchanted Golden Apple  
-🐔 6 Spawner / 8 Crate-Keys (Only One) 
+<a:moneyyyy:1507792459974054118>  In-game Money: 1M Money  
+<a:red_arrow:1507787736554410126> 10 SetHomes  
+<a:red_arrow:1507787736554410126> Custom EMPEROR GEAR (Limited)
+<a:red_arrow:1507787736554410126> EMPEROR MACE 
+<a:red_arrow:1507787736554410126> 12 Shulker  
+<a:red_arrow:1507787736554410126> 256 Golden Apple + 36 Enchanted Golden Apple
+<a:red_arrow:1507787736554410126> Limited Trims Collection
+<a:red_arrow:1507787736554410126> 6 Spawner / 8 Crate-Keys (Only One) 
 
 ⚡ HYDRA Commands +  
-/disposal /smithingtable /loom  
+/disposal /smithingtable /loom /repair hand
+
+**<a:moneyyyy:1507792459974054118> PRICE – 320৳**
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-🔥 PHOENIX – 420৳
+**<a:symbol_eternity:1507813262756937871> PHOENIX <a:symbol_eternity:1507813262756937871>** 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-💰 1.5M Money  
-🏠 12 SetHomes  
-🕊️ Elytra ×1  
-⚔️ Max Mace  
-🛡️ Full max-custom gear
-📦 15 Shulker  
-🍎 320 Golden Apple + 48 Enchanted Golden Apple  
-🐔 8 Spawner / 10 Crate-Keys (Only One) 
+<a:moneyyyy:1507792459974054118>  In-game Money: 1.5M Money  
+<a:red_arrow:1507787736554410126> 12 SetHomes  
+<a:red_arrow:1507787736554410126> Elytra ×1   
+<a:red_arrow:1507787736554410126> Full max-custom gear
+<a:red_arrow:1507787736554410126> ETERNAL SWORD (Custom Enchants)
+<a:red_arrow:1507787736554410126> ETERNAL PICKAXE (Custom Enchants)
+<a:red_arrow:1507787736554410126> ETERNAL MACE (Custom Enchants)
+<a:red_arrow:1507787736554410126> ETERNAL SPEAR (Custom Enchants)
+<a:red_arrow:1507787736554410126> 15 Shulker  
+<a:red_arrow:1507787736554410126> 320 Golden Apple + 48 Enchanted Golden Apple  
+<a:red_arrow:1507787736554410126> Limited Trims Collection
+<a:red_arrow:1507787736554410126> 8 Spawner / 10 Crate-Keys (Only One) 
 
 ⚡ EMPEROR Commands +  
-/heal /ext /night /anvil  
+/heal /ext /night /anvil /repair all
+
+**<a:moneyyyy:1507792459974054118> PRICE – 420৳**
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+**<a:booster:1507826062489424093> BOOSTER SPECIAL RANK <a:booster:1507826062489424093>** 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+<a:moneyyyy:1507792459974054118>  In-game Money:  1.25M Money  
+<a:red_arrow:1507787736554410126> 10 SetHomes   
+<a:red_arrow:1507787736554410126> Custom BOOSTER ARMOR (Limited)
+<a:red_arrow:1507787736554410126> BOOSTER MACE (Vanilla) 
+<a:red_arrow:1507787736554410126> BOOSTER SWORD (Limited Custom Enchant)
+<a:red_arrow:1507787736554410126> 10 Shulker  
+<a:red_arrow:1507787736554410126> 200 Golden Apple + 30 Enchanted Golden Apple  
+<a:red_arrow:1507787736554410126> 3 Spawner / 8 Crate-Keys (Only One) 
+
+⚡ HYDRA Commands +  
+/disposal /smithingtable /loom  /repair hand
+
+**<a:moneyyyy:1507792459974054118> PRICE – 2 Server Boost**
       `)
       .setThumbnail(THUMBNAIL)
       .setImage(BANNER)
@@ -403,20 +438,20 @@ Your support helps keep the server alive, balanced, and growing for the entire c
 
 ━━━━━━━━━━━━━━━━━━━━━━
 
-<a:disclaimer_a:1507787788526026852> Balance Notice
+**<a:disclaimer_a:1507787788526026852> Balance Notice**
 
 <a:red_arrow:1507787736554410126> High-tier spawners are limited and may be adjusted for server balance.
 
 ━━━━━━━━━━━━━━━━━━━━━━
 
-<a:note_a:1507787693990609007> Note:
+**<a:note_a:1507787693990609007> Note:**
 
 <a:red_arrow:1507787736554410126> Spawner list & prices may change anytime for balance
 <a:red_arrow:1507787736554410126> Some spawners may be limited
 
 ━━━━━━━━━━━━━━━━━━━━━━
 
-<a:store_a:1507788568322375690> How to Buy:
+**<a:store_a:1507788568322375690> How to Buy:**
 
 <a:red_arrow:1507787736554410126> Open a ticket in the support channel
 <a:red_arrow:1507787736554410126> Tell staff which spawner you want
