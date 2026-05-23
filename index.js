@@ -365,66 +365,66 @@ Your support helps keep the server alive, balanced, and growing for the entire c
 
     const embed = new EmbedBuilder()
       .setColor(0x8600FF)
-      .setTitle("🛒 ETERNAL SMP • Spawner Shop")
+      .setTitle("<a:Book:1475350165744517152> ETERNAL SMP • Spawner Shop")
       .setDescription(`
 ━━━━━━━━━━━━━━━━━━━━━━
 
-🐷 BASIC SPAWNERS – 20৳ (Per Piece)
+<a:Tiny_Chicken:1478433280012582983> BASIC SPAWNERS – 20৳ (Per Piece)
 
-🐖 Pig
-🐄 Cow
-🐔 Chicken
-🐑 Sheep
-
-━━━━━━━━━━━━━━━━━━━━━━
-
-⚔️ COMBAT SPAWNERS – 30৳ (Per Piece)
-
-🧟 Zombie
-🕷️ Spider
-💀 Skeleton
-🌊 Guardian
+<a:17584arrow:1507427264978092202> Pig
+<a:17584arrow:1507427264978092202> Cow
+<a:17584arrow:1507427264978092202> Chicken
+<a:17584arrow:1507427264978092202> Sheep
 
 ━━━━━━━━━━━━━━━━━━━━━━
 
-🔥 ADVANCED SPAWNERS – 40৳ (Per Piece)
+<a:CT_Fire:789365596797927464> COMBAT SPAWNERS – 30৳ (Per Piece)
 
-👁️ Enderman
-🟢 Slime
-🌋 Magma Cube
-💣 Creeper
-🔥 Blaze
-🐷⚔️ Zombified Piglin (Gold Farming)
+<a:17584arrow:1507427264978092202> Zombie
+<a:17584arrow:1507427264978092202> Spider
+<a:17584arrow:1507427264978092202> Skeleton
+<a:17584arrow:1507427264978092202> Guardian
 
 ━━━━━━━━━━━━━━━━━━━━━━
 
-✨ SPECIAL SPAWNERS – 50৳ (Per Piece)
+<a:dancing_enderman:1148327924374712440> ADVANCED SPAWNERS – 40৳ (Per Piece)
 
-🤖 Iron Golem (Iron Farming)
-👻 Ghast (Ghast Tears & Gunpowder)
-🌪️ Breeze (Breeze Rod)
-💀🔥 Wither Skeleton (Wither Skulls & Coal)
-📦 Shulker
-
-━━━━━━━━━━━━━━━━━━━━━━
-
-⚠️ Balance Notice
-
-High-tier spawners are limited and may be adjusted for server balance.
+<a:17584arrow:1507427264978092202> Enderman
+<a:17584arrow:1507427264978092202> Slime
+<a:17584arrow:1507427264978092202> Magma Cube
+<a:17584arrow:1507427264978092202> Creeper
+<a:17584arrow:1507427264978092202> Blaze
+<a:17584arrow:1507427264978092202> Zombified Piglin (Gold Farming)
 
 ━━━━━━━━━━━━━━━━━━━━━━
 
-📝 Note:
+<a:2381_Little_Pretty_Star_Yellow:1473219354614169664> SPECIAL SPAWNERS – 50৳ (Per Piece)
 
-• Spawner list & prices may change anytime for balance
-• Some spawners may be limited
+<a:17584arrow:1507427264978092202> Iron Golem (Iron Farming)
+<a:17584arrow:1507427264978092202> Ghast (Ghast Tears & Gunpowder)
+<a:17584arrow:1507427264978092202> Breeze (Breeze Rod)
+<a:17584arrow:1507427264978092202> Wither Skeleton (Wither Skulls & Coal)
+<a:17584arrow:1507427264978092202> Shulker
 
 ━━━━━━━━━━━━━━━━━━━━━━
 
-🛍️ How to Buy:
+<a:3485cancel:1475738883072458834> Balance Notice
 
-• Open a ticket in the support channel
-• Tell staff which spawner you want
+<a:Arrow:1275397936284438588> High-tier spawners are limited and may be adjusted for server balance.
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+<a:note:1250703764973813760> Note:
+
+<a:Arrow:1275397936284438588> Spawner list & prices may change anytime for balance
+<a:Arrow:1275397936284438588> Some spawners may be limited
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+<:1439257281647743136:1472629449840398479> How to Buy:
+
+<a:Arrow:1275397936284438588> Open a ticket in the support channel
+<a:Arrow:1275397936284438588> Tell staff which spawner you want
 `)
       .setThumbnail(THUMBNAIL)
       .setImage(BANNER)
