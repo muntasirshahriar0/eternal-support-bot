@@ -188,83 +188,83 @@ client.on("messageCreate", async (message) => {
       .setColor(0x8600FF)
       .setDescription(`
 ━━━━━━━━━━━━━━━━━━━━━━
-🛒 Eternal SMP • Store Terms
+<:shoppie:1507809836421873725> Eternal SMP • Store Terms
 ━━━━━━━━━━━━━━━━━━━━━━
 
-Purchasing any Rank, Package, Crate, or Digital Item from the Eternal SMP Store means you agree to all terms and conditions listed below.
+<a:red_arrow:1507787736554410126> Purchasing any Rank, Package, Crate, or Digital Item from the Eternal SMP Store means you agree to all terms and conditions listed below.
 
 ━━━━━━━━━━━━━━━━━━━━━━
-⚖ Legal Disclaimer
+<a:announcement_a:1507790462210281482> Legal Disclaimer
 ━━━━━━━━━━━━━━━━━━━━━━
 
-Eternal SMP is an independent Minecraft community and is not affiliated with, endorsed by, or associated with Mojang Studios, Microsoft, or Minecraft.
+<a:red_arrow:1507787736554410126> Eternal SMP is an independent Minecraft community and is not affiliated with, endorsed by, or associated with Mojang Studios, Microsoft, or Minecraft.
 
-All purchases are voluntary contributions made to support the server, community, and future development.
+<a:red_arrow:1507787736554410126> All purchases are voluntary contributions made to support the server, community, and future development.
 
 ━━━━━━━━━━━━━━━━━━━━━━
-💳 Payments & Purchases
+<a:moneyyyy:1507792459974054118> Payments & Purchases
 ━━━━━━━━━━━━━━━━━━━━━━
 
-1️⃣ Digital Products
+<a:arrow:1507782135212150845> Digital Products
 All ranks, packages, perks, crates, and items are digital content delivered in-game. No physical products will be shipped.
 
-2️⃣ Server Support
+<a:arrow:1507782135212150845> Server Support
 Payments help fund server hosting, protection, maintenance, development, updates, performance improvements, and community events.
 
-3️⃣ No Refund Policy
+<a:arrow:1507782135212150845> No Refund Policy
 All purchases are final and non-refundable once payment has been successfully completed and rewards are delivered.
 
-4️⃣ Fraud & Chargebacks
+<a:arrow:1507782135212150845> Fraud & Chargebacks
 Any chargeback, payment dispute, or fraudulent transaction may result in permanent suspension from Eternal SMP, including loss of all purchased items and store access.
 
 ━━━━━━━━━━━━━━━━━━━━━━
-🎖 Ranks & Perks
+<a:crown_a:1507791684208033842> Ranks & Perks
 ━━━━━━━━━━━━━━━━━━━━━━
 
-5️⃣ Rank Duration
+<a:arrow:1507782135212150845> Rank Duration
 Ranks may be permanent, seasonal, or subscription-based depending on the product description in the store.
 
-6️⃣ Perk Balancing
+<a:arrow:1507782135212150845> Perk Balancing
 To maintain fair gameplay and server balance, rank perks, commands, or bonuses may be adjusted, modified, or removed at any time without prior notice.
 
-7️⃣ Rule Violations
+<a:arrow:1507782135212150845> Rule Violations
 Breaking server or Discord rules may result in warnings, suspensions, permanent bans, or removal of purchased perks without refund.
 
 ━━━━━━━━━━━━━━━━━━━━━━
-🖥 Server Availability
+<a:online:1507791786943447173> Server Availability
 ━━━━━━━━━━━━━━━━━━━━━━
 
-8️⃣ Maintenance & Downtime
+<a:arrow:1507782135212150845> Maintenance & Downtime
 The server may occasionally experience downtime due to maintenance, updates, technical issues, or unexpected outages. Downtime does not qualify for refunds or compensation.
 
-9️⃣ Server Changes
+<a:arrow:1507782135212150845> Server Changes
 Eternal SMP reserves the right to modify gameplay systems, economy features, ranks, plugins, worlds, or server mechanics at any time to improve the community experience.
 
 ━━━━━━━━━━━━━━━━━━━━━━
-🔒 Account Responsibility
+<a:disclaimer_a:1507787788526026852> Account Responsibility
 ━━━━━━━━━━━━━━━━━━━━━━
 
-Players are fully responsible for the security and ownership of their Minecraft and Discord accounts.
+<a:red_arrow:1507787736554410126> Players are fully responsible for the security and ownership of their Minecraft and Discord accounts.
 
-Eternal SMP is not responsible for lost, stolen, hacked, or shared accounts.
-
-━━━━━━━━━━━━━━━━━━━━━━
-⚠ Item Loss Policy
-━━━━━━━━━━━━━━━━━━━━━━
-
-Some items, kits, or rewards may be limited or non-renewable.
-
-Lost items caused by death, PvP, clearing inventories, glitches, or player mistakes will generally not be restored unless approved by staff under exceptional circumstances.
+<a:red_arrow:1507787736554410126> Eternal SMP is not responsible for lost, stolen, hacked, or shared accounts.
 
 ━━━━━━━━━━━━━━━━━━━━━━
-✅ Agreement
+<a:disclaimer_a:1507787788526026852> Item Loss Policy
 ━━━━━━━━━━━━━━━━━━━━━━
 
-By completing a purchase from the Eternal SMP Store, you confirm that you have read, understood, and accepted all Store Terms and Server Rules.
+<a:red_arrow:1507787736554410126> Some items, kits, or rewards may be limited or non-renewable.
+
+<a:red_arrow:1507787736554410126> Lost items caused by death, PvP, clearing inventories, glitches, or player mistakes will generally not be restored unless approved by staff under exceptional circumstances.
 
 ━━━━━━━━━━━━━━━━━━━━━━
-🔥 Thank You for Supporting Eternal SMP
-Your support helps keep the server alive, balanced, and growing for the entire community.
+<:damn:1507752860643885076> Agreement
+━━━━━━━━━━━━━━━━━━━━━━
+
+<a:red_arrow:1507787736554410126> By completing a purchase from the Eternal SMP Store, you confirm that you have read, understood, and accepted all Store Terms and Server Rules.
+
+━━━━━━━━━━━━━━━━━━━━━━
+<a:fire_a0:1507790340067950794> Thank You for Supporting Eternal SMP
+Your support helps keep the server alive, balanced, and growing for the entire community. <a:fire_a0:1507790340067950794> 
 ━━━━━━━━━━━━━━━━━━━━━━
 `)
       .setThumbnail(THUMBNAIL)
@@ -364,7 +364,7 @@ Your support helps keep the server alive, balanced, and growing for the entire c
       .setDescription(`
 ━━━━━━━━━━━━━━━━━━━━━━
 
-<a:chikku_a:1507790277853843676> BASIC SPAWNERS – 20৳ (Per Piece)
+**<a:chikku_a:1507790277853843676> BASIC SPAWNERS – 20৳ (Per Piece)**
 
 <a:arrow:1507782135212150845> Pig
 <a:arrow:1507782135212150845> Cow
@@ -373,7 +373,7 @@ Your support helps keep the server alive, balanced, and growing for the entire c
 
 ━━━━━━━━━━━━━━━━━━━━━━
 
-<a:fire_a0:1507790340067950794> COMBAT SPAWNERS – 30৳ (Per Piece)
+**<a:fire_a0:1507790340067950794> COMBAT SPAWNERS – 30৳ (Per Piece)**
 
 <a:arrow:1507782135212150845> Zombie
 <a:arrow:1507782135212150845> Spider
@@ -382,7 +382,7 @@ Your support helps keep the server alive, balanced, and growing for the entire c
 
 ━━━━━━━━━━━━━━━━━━━━━━
 
-<a:enderman_dance:1507790630984749299> ADVANCED SPAWNERS – 40৳ (Per Piece)
+**<a:enderman_dance:1507790630984749299> ADVANCED SPAWNERS – 40৳ (Per Piece)**
 
 <a:arrow:1507782135212150845> Enderman
 <a:arrow:1507782135212150845> Slime
@@ -393,7 +393,7 @@ Your support helps keep the server alive, balanced, and growing for the entire c
 
 ━━━━━━━━━━━━━━━━━━━━━━
 
-<a:twinkle_twinkle:1507788149030392000> SPECIAL SPAWNERS – 50৳ (Per Piece)
+**<a:twinkle_twinkle:1507788149030392000> SPECIAL SPAWNERS – 50৳ (Per Piece)**
 
 <a:arrow:1507782135212150845> Iron Golem (Iron Farming)
 <a:arrow:1507782135212150845> Ghast (Ghast Tears & Gunpowder)
