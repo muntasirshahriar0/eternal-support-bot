@@ -284,7 +284,7 @@ Your support helps keep the server alive, balanced, and growing for the entire c
 
     const embed = new EmbedBuilder()
       .setColor(0x8600FF)
-      .setTitle("🔥 ETERNAL SMP • Rank List")
+      .setTitle("<a:fire_a0:1507790340067950794> ETERNAL SMP • Rank List")
       .setDescription(`
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 **<:shield_0:1507754792334790757> KNIGHT <:shield_0:1507754792334790757>** 
