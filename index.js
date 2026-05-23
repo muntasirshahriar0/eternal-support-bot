@@ -64,9 +64,9 @@ client.on("messageCreate", async (message) => {
       .setColor(0x8600FF)
       .setTitle("💰 Eternal SMP Payment Methods")
       .setDescription(
-        "📱 **Bkash 1 (Personal → Personal):** 01741644334\n\n" +
-        "📱 **Bkash 2 (Agent / Personal → Personal):** 01768166414\n\n" +
-        "🛒 Send screenshot in support ticket after payment!"
+        "<a:17584arrow:1507427264978092202> **Bkash 1 (Personal → Personal):** 01741644334\n\n" +
+        "<a:17584arrow:1507427264978092202> **Bkash 2 (Agent / Personal → Personal):** 01768166414\n\n" +
+        "<a:17584arrow:1507427264978092202> Send screenshot in support ticket after payment!"
       )
       .setThumbnail(THUMBNAIL)
       .setImage(BANNER)
@@ -87,86 +87,81 @@ client.on("messageCreate", async (message) => {
 
     const embed = new EmbedBuilder()
       .setColor(0x8600FF)
-      .setTitle("📜 Eternal SMP — Official Server Rules")
+      .setTitle("<a:Book:1475350165744517152> Eternal SMP — Official Server Rules")
       .setDescription(`
-# 📜 Eternal SMP — Official Server Rules
+# <a:Book:1475350165744517152> Eternal SMP — Official Server Rules
 
 ━━━━━━━━━━━━━━
 
-## 💬 **1. Chat Rules**
-> Keep the chat clean, friendly, and respectful. Toxicity, harassment, hate speech, discrimination, excessive swearing, spam, or inappropriate behavior is strictly prohibited.
+## <a:Chatping:1402590347615277066> **1. Chat Rules**
+> <a:arrowe:1250703758837420076> Keep the chat clean, friendly, and respectful. Toxicity, harassment, hate speech, discrimination, excessive swearing, spam, or inappropriate behavior is strictly prohibited.
 
 ━━━━━━━━━━━━━━
 
-## 🎮 **2. Fair Gameplay**
-> Using cheats, hacks, x-ray, auto-clickers, exploits, dupes, modified clients, or any unfair advantages is not allowed. Play fairly and respect the survival experience.
+## <a:CT_IntenseGaming:779870920478294017> **2. Fair Gameplay**
+> <a:arrowe:1250703758837420076> Using cheats, hacks, x-ray, auto-clickers, exploits, dupes, modified clients, or any unfair advantages is not allowed. Play fairly and respect the survival experience.
 
 ━━━━━━━━━━━━━━
 
-## 🏡 **3. Community & Server Balance**
-> Help keep the server enjoyable for everyone. Griefing, trolling, stealing, trapping players, intentionally ruining builds, or disturbing the community is not allowed.
+## <a:no:1470429071199567935> **3. Banned Farms & Lag Machines**
+> <a:arrowe:1250703758837420076> Do not build farms, redstone machines, chunk loaders, or structures that may cause excessive lag or harm server performance. Staff may remove lag-causing builds without warning.
 
 ━━━━━━━━━━━━━━
 
-## 🚫 **4. Banned Farms & Lag Machines**
-> Do not build farms, redstone machines, chunk loaders, or structures that may cause excessive lag or harm server performance. Staff may remove lag-causing builds without warning.
+## <a:TheBeeHive_Announcement:1469252818685661277> **4. Proper Channel Usage**
+> <a:arrowe:1250703758837420076> Use channels correctly and avoid unnecessary spam, advertising, or disruptive behavior. Keep conversations meaningful and respectful.
 
 ━━━━━━━━━━━━━━
 
-## 📢 **5. Proper Channel Usage**
-> Use channels correctly and avoid unnecessary spam, advertising, or disruptive behavior. Keep conversations meaningful and respectful.
+## <a:no:1470429071199567935> **5. No Begging**
+> <a:arrowe:1250703758837420076> Do not beg for ranks, items, money, permissions, staff roles, or special treatment from staff or players.
 
 ━━━━━━━━━━━━━━
 
-## 🎖️ **6. No Begging**
-> Do not beg for ranks, items, money, permissions, staff roles, or special treatment from staff or players.
+## <a:6_shield:1475608748604260552> **6. Follow Discord Guidelines**
+> <a:arrowe:1250703758837420076> All members must follow the official Discord Community Guidelines and Terms of Service at all times.
 
 ━━━━━━━━━━━━━━
 
-## 🛡️ **7. Follow Discord Guidelines**
-> All members must follow the official Discord Community Guidelines and Terms of Service at all times.
+## <a:CT_PinRave:770405346614837249> **7. Voice Chat Rules**
+> <a:arrowe:1250703758837420076> Keep VC conversations friendly and appropriate. Mic spam, earrape, excessive background noise, harassment, or disturbing others is not allowed.
 
 ━━━━━━━━━━━━━━
 
-## 🎤 **8. Voice Chat Rules**
-> Keep VC conversations friendly and appropriate. Mic spam, earrape, excessive background noise, harassment, or disturbing others is not allowed.
+## <a:MoneySoaring:1473205673616740405> **8. No Real Money Trading**
+> <a:arrowe:1250703758837420076> Trading in-game items, accounts, or services for real money outside the official server store is strictly prohibited.
 
 ━━━━━━━━━━━━━━
 
-## 💸 **9. No Real Money Trading**
-> Trading in-game items, accounts, or services for real money outside the official server store is strictly prohibited.
+## <a:shop:1469252824083857522> **9. Store & Rank Purchase Policy**
+> <a:arrowe:1250703758837420076> All purchases made through the official server store are final.
+> <a:arrowe:1250703758837420076> Purchased ranks, kits, or items will be delivered after successful payment verification.
+> <a:arrowe:1250703758837420076> Sharing or abusing paid perks may result in punishment or removal of perks.
+> <a:arrowe:1250703758837420076> Chargebacks or fraudulent payments will result in a permanent blacklist from the server and store.
 
 ━━━━━━━━━━━━━━
 
-## 🛒 **10. Store & Rank Purchase Policy**
-> • All purchases made through the official server store are final.
-> • Purchased ranks, kits, or items will be delivered after successful payment verification.
-> • Sharing or abusing paid perks may result in punishment or removal of perks.
-> • Chargebacks or fraudulent payments will result in a permanent blacklist from the server and store.
+## <a:Warning:1453791617474363553> **10. Refund Policy**
+> <a:arrowe:1250703758837420076> No refunds will be given after ranks, items, or perks are delivered.
+> <a:arrowe:1250703758837420076> Accidental purchases are the buyer’s responsibility.
+> <a:arrowe:1250703758837420076> Breaking server rules after purchasing does NOT make you eligible for a refund.
+> <a:arrowe:1250703758837420076> If you experience delivery issues, contact staff with valid proof.
 
 ━━━━━━━━━━━━━━
 
-## ❌ **11. Refund Policy**
-> • No refunds will be given after ranks, items, or perks are delivered.
-> • Accidental purchases are the buyer’s responsibility.
-> • Breaking server rules after purchasing does NOT make you eligible for a refund.
-> • If you experience delivery issues, contact staff with valid proof.
+## <a:TheBeeHive_Announcement:1469252818685661277> **11. Punishment System**
+> <a:arrowe:1250703758837420076> Warning
+> <a:arrowe:1250703758837420076> Mute
+> <a:arrowe:1250703758837420076> Kick
+> <a:arrowe:1250703758837420076> Temporary Ban
+> <a:arrowe:1250703758837420076> Permanent Ban
+
+> <a:arrowe:1250703758837420076> Severe violations such as hacking, duping, scamming, or chargebacks may result in immediate permanent punishment without warning.
 
 ━━━━━━━━━━━━━━
 
-## ⚖️ **12. Punishment System**
-> • Warning
-> • Mute
-> • Kick
-> • Temporary Ban
-> • Permanent Ban
-
-> Severe violations such as hacking, duping, scamming, or chargebacks may result in immediate permanent punishment without warning.
-
-━━━━━━━━━━━━━━
-
-## 🧠 **13. Use Common Sense**
-> Not every situation can be covered by rules. Use common sense and respect staff decisions to help maintain a positive and fair community.
+## <:CT_20123Demoji:775453144071012402> **12. Use Common Sense**
+> <a:arrowe:1250703758837420076> Not every situation can be covered by rules. Use common sense and respect staff decisions to help maintain a positive and fair community.
 
 ━━━━━━━━━━━━━━
 
@@ -193,83 +188,83 @@ client.on("messageCreate", async (message) => {
       .setColor(0x8600FF)
       .setDescription(`
 ━━━━━━━━━━━━━━━━━━━━━━
-🛒 Eternal SMP • Store Terms
+<a:Book:1475350165744517152> Eternal SMP • Store Terms
 ━━━━━━━━━━━━━━━━━━━━━━
 
-Purchasing any Rank, Package, Crate, or Digital Item from the Eternal SMP Store means you agree to all terms and conditions listed below.
+<a:17584arrow:1507427264978092202> Purchasing any Rank, Package, Crate, or Digital Item from the Eternal SMP Store means you agree to all terms and conditions listed below.
 
 ━━━━━━━━━━━━━━━━━━━━━━
-⚖ Legal Disclaimer
+<a:Warning:1453791617474363553> Legal Disclaimer
 ━━━━━━━━━━━━━━━━━━━━━━
 
-Eternal SMP is an independent Minecraft community and is not affiliated with, endorsed by, or associated with Mojang Studios, Microsoft, or Minecraft.
+<a:17584arrow:1507427264978092202> Eternal SMP is an independent Minecraft community and is not affiliated with, endorsed by, or associated with Mojang Studios, Microsoft, or Minecraft.
 
-All purchases are voluntary contributions made to support the server, community, and future development.
+<a:17584arrow:1507427264978092202> All purchases are voluntary contributions made to support the server, community, and future development.
 
 ━━━━━━━━━━━━━━━━━━━━━━
-💳 Payments & Purchases
+<a:MoneySoaring:1473205673616740405> Payments & Purchases
 ━━━━━━━━━━━━━━━━━━━━━━
 
-1️⃣ Digital Products
+<a:17584arrow:1507427264978092202> Digital Products
 All ranks, packages, perks, crates, and items are digital content delivered in-game. No physical products will be shipped.
 
-2️⃣ Server Support
+<a:17584arrow:1507427264978092202> Server Support
 Payments help fund server hosting, protection, maintenance, development, updates, performance improvements, and community events.
 
-3️⃣ No Refund Policy
+<a:17584arrow:1507427264978092202> No Refund Policy
 All purchases are final and non-refundable once payment has been successfully completed and rewards are delivered.
 
-4️⃣ Fraud & Chargebacks
+<a:17584arrow:1507427264978092202> Fraud & Chargebacks
 Any chargeback, payment dispute, or fraudulent transaction may result in permanent suspension from Eternal SMP, including loss of all purchased items and store access.
 
 ━━━━━━━━━━━━━━━━━━━━━━
-🎖 Ranks & Perks
+<a:5_crown:1413836583588724816> Ranks & Perks
 ━━━━━━━━━━━━━━━━━━━━━━
 
-5️⃣ Rank Duration
+<a:17584arrow:1507427264978092202> Rank Duration
 Ranks may be permanent, seasonal, or subscription-based depending on the product description in the store.
 
-6️⃣ Perk Balancing
+<a:17584arrow:1507427264978092202> Perk Balancing
 To maintain fair gameplay and server balance, rank perks, commands, or bonuses may be adjusted, modified, or removed at any time without prior notice.
 
-7️⃣ Rule Violations
+<a:17584arrow:1507427264978092202> Rule Violations
 Breaking server or Discord rules may result in warnings, suspensions, permanent bans, or removal of purchased perks without refund.
 
 ━━━━━━━━━━━━━━━━━━━━━━
-🖥 Server Availability
+<a:Online:1470429103906623498> Server Availability
 ━━━━━━━━━━━━━━━━━━━━━━
 
-8️⃣ Maintenance & Downtime
+<a:17584arrow:1507427264978092202> Maintenance & Downtime
 The server may occasionally experience downtime due to maintenance, updates, technical issues, or unexpected outages. Downtime does not qualify for refunds or compensation.
 
-9️⃣ Server Changes
+<a:17584arrow:1507427264978092202> Server Changes
 Eternal SMP reserves the right to modify gameplay systems, economy features, ranks, plugins, worlds, or server mechanics at any time to improve the community experience.
 
 ━━━━━━━━━━━━━━━━━━━━━━
-🔒 Account Responsibility
+<a:Warning:1453791617474363553> Account Responsibility
 ━━━━━━━━━━━━━━━━━━━━━━
 
-Players are fully responsible for the security and ownership of their Minecraft and Discord accounts.
+<a:17584arrow:1507427264978092202> Players are fully responsible for the security and ownership of their Minecraft and Discord accounts.
 
-Eternal SMP is not responsible for lost, stolen, hacked, or shared accounts.
-
-━━━━━━━━━━━━━━━━━━━━━━
-⚠ Item Loss Policy
-━━━━━━━━━━━━━━━━━━━━━━
-
-Some items, kits, or rewards may be limited or non-renewable.
-
-Lost items caused by death, PvP, clearing inventories, glitches, or player mistakes will generally not be restored unless approved by staff under exceptional circumstances.
+<a:17584arrow:1507427264978092202> Eternal SMP is not responsible for lost, stolen, hacked, or shared accounts.
 
 ━━━━━━━━━━━━━━━━━━━━━━
-✅ Agreement
+<a:Warning:1453791617474363553> Item Loss Policy
 ━━━━━━━━━━━━━━━━━━━━━━
 
-By completing a purchase from the Eternal SMP Store, you confirm that you have read, understood, and accepted all Store Terms and Server Rules.
+<a:17584arrow:1507427264978092202> Some items, kits, or rewards may be limited or non-renewable.
+
+<a:17584arrow:1507427264978092202> Lost items caused by death, PvP, clearing inventories, glitches, or player mistakes will generally not be restored unless approved by staff under exceptional circumstances.
 
 ━━━━━━━━━━━━━━━━━━━━━━
-🔥 Thank You for Supporting Eternal SMP
-Your support helps keep the server alive, balanced, and growing for the entire community.
+<a:VERIFY:1225445546584703107> Agreement
+━━━━━━━━━━━━━━━━━━━━━━
+
+<a:17584arrow:1507427264978092202> By completing a purchase from the Eternal SMP Store, you confirm that you have read, understood, and accepted all Store Terms and Server Rules.
+
+━━━━━━━━━━━━━━━━━━━━━━
+<a:CT_Fire:789365596797927464> Thank You for Supporting Eternal SMP
+Your support helps keep the server alive, balanced, and growing for the entire community. <a:VERIFY:1225445546584703107>
 ━━━━━━━━━━━━━━━━━━━━━━
 `)
       .setThumbnail(THUMBNAIL)
