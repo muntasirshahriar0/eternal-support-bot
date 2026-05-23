@@ -20,10 +20,13 @@ app.listen(process.env.PORT || 3000, () => {
 });
 
 /* =========================
-   BANNER
+   IMAGES
 ========================= */
 const BANNER =
-  "https://cdn.discordapp.com/attachments/1504463263872712924/1506664881494163586/IMG_20260520_202725.jpg?ex=6a0f1684&is=6a0dc504&hm=1139d198bfa82b602c38540e91c0b78c36f932a1d688b9b44596b41ef2a41eb5";
+  "https://cdn.discordapp.com/attachments/1504463263872712924/1507723264141692968/1000016350-ezremove.gif?ex=6a12f036&is=6a119eb6&hm=751c3665f5dc87b082a5eb77fab204385963005079233755f92770713835501c&";
+
+const THUMBNAIL =
+  "https://cdn.discordapp.com/attachments/1504463263872712924/1507723134168600706/1000016387-ezremove.gif?ex=6a12f017&is=6a119e97&hm=63b632930132afd31b0604d72f37c6f90cfe6e294bb7be7336379d846b8ac9a6&";
 
 /* =========================
    DISCORD CLIENT
@@ -58,13 +61,14 @@ client.on("messageCreate", async (message) => {
   if (msg === ".pay") {
 
     const embed = new EmbedBuilder()
-      .setColor(0x9B59B6)
+      .setColor(0x8600FF)
       .setTitle("💰 Eternal SMP Payment Methods")
       .setDescription(
         "📱 **Bkash 1 (Personal → Personal):** 01741644334\n\n" +
         "📱 **Bkash 2 (Agent / Personal → Personal):** 01768166414\n\n" +
         "🛒 Send screenshot in support ticket after payment!"
       )
+      .setThumbnail(THUMBNAIL)
       .setImage(BANNER)
       .setFooter({
         text: "Eternal SMP Store"
@@ -82,7 +86,7 @@ client.on("messageCreate", async (message) => {
   if (msg === ".rules") {
 
     const embed = new EmbedBuilder()
-      .setColor(0x9B59B6)
+      .setColor(0x8600FF)
       .setTitle("📜 Eternal SMP — Official Server Rules")
       .setDescription(`
 # 📜 Eternal SMP — Official Server Rules
@@ -168,6 +172,7 @@ client.on("messageCreate", async (message) => {
 
 # 🌟 Welcome to Eternal SMP 🌟
 `)
+      .setThumbnail(THUMBNAIL)
       .setImage(BANNER)
       .setFooter({
         text: "Eternal SMP Rules"
@@ -185,7 +190,7 @@ client.on("messageCreate", async (message) => {
   if (msg === ".tac") {
 
     const embed = new EmbedBuilder()
-      .setColor(0x9B59B6)
+      .setColor(0x8600FF)
       .setDescription(`
 ━━━━━━━━━━━━━━━━━━━━━━
 🛒 Eternal SMP • Store Terms
@@ -267,6 +272,7 @@ By completing a purchase from the Eternal SMP Store, you confirm that you have r
 Your support helps keep the server alive, balanced, and growing for the entire community.
 ━━━━━━━━━━━━━━━━━━━━━━
 `)
+      .setThumbnail(THUMBNAIL)
       .setImage(BANNER)
       .setFooter({
         text: "Eternal SMP Store Terms"
@@ -282,11 +288,11 @@ Your support helps keep the server alive, balanced, and growing for the entire c
   if (msg === ".rank") {
 
     const embed = new EmbedBuilder()
-      .setColor(0x9B59B6)
+      .setColor(0x8600FF)
       .setTitle("🔥 ETERNAL SMP • Rank List")
       .setDescription(`
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-🔥 INFERNO – 120৳
+🔥 KNIGHT – 120৳
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 💰 In-game Money: 500K  
@@ -300,7 +306,7 @@ Your support helps keep the server alive, balanced, and growing for the entire c
 /back /ptime /near /hat  
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-🐉 HYDRA – 240৳
+🐉 HYDRA – 220৳
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 💰 750K Money  
@@ -310,7 +316,7 @@ Your support helps keep the server alive, balanced, and growing for the entire c
 🍎 120 Golden Apple + 24 Enchanted Golden Apple  
 🐔 4 Spawner / 6 Crate-Keys (Only One) 
 
-⚡ INFERNO Commands + 
+⚡ KNIGHT Commands + 
 /workbench /echest /feed /nick  
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -344,6 +350,7 @@ Your support helps keep the server alive, balanced, and growing for the entire c
 ⚡ EMPEROR Commands +  
 /heal /ext /night /anvil  
       `)
+      .setThumbnail(THUMBNAIL)
       .setImage(BANNER)
       .setFooter({ text: "Eternal SMP Rank System" })
       .setTimestamp();
@@ -357,7 +364,7 @@ Your support helps keep the server alive, balanced, and growing for the entire c
   if (msg === ".spawner") {
 
     const embed = new EmbedBuilder()
-      .setColor(0x9B59B6)
+      .setColor(0x8600FF)
       .setTitle("🛒 ETERNAL SMP • Spawner Shop")
       .setDescription(`
 ━━━━━━━━━━━━━━━━━━━━━━
@@ -419,6 +426,7 @@ High-tier spawners are limited and may be adjusted for server balance.
 • Open a ticket in the support channel
 • Tell staff which spawner you want
 `)
+      .setThumbnail(THUMBNAIL)
       .setImage(BANNER)
       .setFooter({
         text: "Eternal SMP Spawner Shop"
