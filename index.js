@@ -103,42 +103,37 @@ client.on("messageCreate", async (message) => {
 
 ━━━━━━━━━━━━━━
 
-## 🏡 **3. Community & Server Balance**
-> Help keep the server enjoyable for everyone. Griefing, trolling, stealing, trapping players, intentionally ruining builds, or disturbing the community is not allowed.
-
-━━━━━━━━━━━━━━
-
-## 🚫 **4. Banned Farms & Lag Machines**
+## 🚫 **3. Banned Farms & Lag Machines**
 > Do not build farms, redstone machines, chunk loaders, or structures that may cause excessive lag or harm server performance. Staff may remove lag-causing builds without warning.
 
 ━━━━━━━━━━━━━━
 
-## 📢 **5. Proper Channel Usage**
+## 📢 **4. Proper Channel Usage**
 > Use channels correctly and avoid unnecessary spam, advertising, or disruptive behavior. Keep conversations meaningful and respectful.
 
 ━━━━━━━━━━━━━━
 
-## 🎖️ **6. No Begging**
+## 🎖️ **5. No Begging**
 > Do not beg for ranks, items, money, permissions, staff roles, or special treatment from staff or players.
 
 ━━━━━━━━━━━━━━
 
-## 🛡️ **7. Follow Discord Guidelines**
+## 🛡️ **6. Follow Discord Guidelines**
 > All members must follow the official Discord Community Guidelines and Terms of Service at all times.
 
 ━━━━━━━━━━━━━━
 
-## 🎤 **8. Voice Chat Rules**
+## 🎤 **7. Voice Chat Rules**
 > Keep VC conversations friendly and appropriate. Mic spam, earrape, excessive background noise, harassment, or disturbing others is not allowed.
 
 ━━━━━━━━━━━━━━
 
-## 💸 **9. No Real Money Trading**
+## 💸 **8. No Real Money Trading**
 > Trading in-game items, accounts, or services for real money outside the official server store is strictly prohibited.
 
 ━━━━━━━━━━━━━━
 
-## 🛒 **10. Store & Rank Purchase Policy**
+## 🛒 **9. Store & Rank Purchase Policy**
 > • All purchases made through the official server store are final.
 > • Purchased ranks, kits, or items will be delivered after successful payment verification.
 > • Sharing or abusing paid perks may result in punishment or removal of perks.
@@ -146,7 +141,7 @@ client.on("messageCreate", async (message) => {
 
 ━━━━━━━━━━━━━━
 
-## ❌ **11. Refund Policy**
+## ❌ **10. Refund Policy**
 > • No refunds will be given after ranks, items, or perks are delivered.
 > • Accidental purchases are the buyer’s responsibility.
 > • Breaking server rules after purchasing does NOT make you eligible for a refund.
@@ -154,7 +149,7 @@ client.on("messageCreate", async (message) => {
 
 ━━━━━━━━━━━━━━
 
-## ⚖️ **12. Punishment System**
+## ⚖️ **11. Punishment System**
 > • Warning
 > • Mute
 > • Kick
@@ -165,7 +160,7 @@ client.on("messageCreate", async (message) => {
 
 ━━━━━━━━━━━━━━
 
-## 🧠 **13. Use Common Sense**
+## 🧠 **12. Use Common Sense**
 > Not every situation can be covered by rules. Use common sense and respect staff decisions to help maintain a positive and fair community.
 
 ━━━━━━━━━━━━━━
