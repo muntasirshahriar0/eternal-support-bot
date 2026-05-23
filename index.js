@@ -87,85 +87,85 @@ client.on("messageCreate", async (message) => {
 
     const embed = new EmbedBuilder()
       .setColor(0x8600FF)
-      .setTitle("📜 Eternal SMP — Official Server Rules")
+      .setTitle("<a:magic_book:1507790392945410299> Eternal SMP — Official Server Rules")
       .setDescription(`
-# 📜 Eternal SMP — Official Server Rules
+# <a:magic_book:1507790392945410299> Eternal SMP — Official Server Rules
 
 ━━━━━━━━━━━━━━
 
-## 💬 **1. Chat Rules**
-> Keep the chat clean, friendly, and respectful. Toxicity, harassment, hate speech, discrimination, excessive swearing, spam, or inappropriate behavior is strictly prohibited.
+## <a:chats:1507788455558512691> **1. Chat Rules**
+<a:red_arrow:1507787736554410126> Keep the chat clean, friendly, and respectful. Toxicity, harassment, hate speech, discrimination, excessive swearing, spam, or inappropriate behavior is strictly prohibited.
 
 ━━━━━━━━━━━━━━
 
-## 🎮 **2. Fair Gameplay**
-> Using cheats, hacks, x-ray, auto-clickers, exploits, dupes, modified clients, or any unfair advantages is not allowed. Play fairly and respect the survival experience.
+## <a:sweaty_gamer:1507788395714445515> **2. Fair Gameplay**
+<a:red_arrow:1507787736554410126> Using cheats, hacks, x-ray, auto-clickers, exploits, dupes, modified clients, or any unfair advantages is not allowed. Play fairly and respect the survival experience.
 
 ━━━━━━━━━━━━━━
 
-## 🚫 **3. Banned Farms & Lag Machines**
-> Do not build farms, redstone machines, chunk loaders, or structures that may cause excessive lag or harm server performance. Staff may remove lag-causing builds without warning.
+## <a:disclaimer_a:1507787788526026852> **3. Banned Farms & Lag Machines**
+<a:red_arrow:1507787736554410126> Do not build farms, redstone machines, chunk loaders, or structures that may cause excessive lag or harm server performance. Staff may remove lag-causing builds without warning.
 
 ━━━━━━━━━━━━━━
 
-## 📢 **4. Proper Channel Usage**
-> Use channels correctly and avoid unnecessary spam, advertising, or disruptive behavior. Keep conversations meaningful and respectful.
+## <a:announcement_a:1507790462210281482> **4. Proper Channel Usage**
+<a:red_arrow:1507787736554410126> Use channels correctly and avoid unnecessary spam, advertising, or disruptive behavior. Keep conversations meaningful and respectful.
 
 ━━━━━━━━━━━━━━
 
-## 🎖️ **5. No Begging**
-> Do not beg for ranks, items, money, permissions, staff roles, or special treatment from staff or players.
+## <a:disclaimer_a:1507787788526026852> **5. No Begging**
+<a:red_arrow:1507787736554410126> Do not beg for ranks, items, money, permissions, staff roles, or special treatment from staff or players.
 
 ━━━━━━━━━━━━━━
 
-## 🛡️ **6. Follow Discord Guidelines**
-> All members must follow the official Discord Community Guidelines and Terms of Service at all times.
+## <a:disclaimer_a:1507787788526026852> **6. Follow Discord Guidelines**
+<a:red_arrow:1507787736554410126> All members must follow the official Discord Community Guidelines and Terms of Service at all times.
 
 ━━━━━━━━━━━━━━
 
-## 🎤 **7. Voice Chat Rules**
-> Keep VC conversations friendly and appropriate. Mic spam, earrape, excessive background noise, harassment, or disturbing others is not allowed.
+## <a:announcement_a:1507790462210281482> **7. Voice Chat Rules**
+<a:red_arrow:1507787736554410126> Keep VC conversations friendly and appropriate. Mic spam, earrape, excessive background noise, harassment, or disturbing others is not allowed.
 
 ━━━━━━━━━━━━━━
 
-## 💸 **8. No Real Money Trading**
-> Trading in-game items, accounts, or services for real money outside the official server store is strictly prohibited.
+## <a:moneyyyy:1507792459974054118> **8. No Real Money Trading**
+<a:red_arrow:1507787736554410126> Trading in-game items, accounts, or services for real money outside the official server store is strictly prohibited.
 
 ━━━━━━━━━━━━━━
 
-## 🛒 **9. Store & Rank Purchase Policy**
-> • All purchases made through the official server store are final.
-> • Purchased ranks, kits, or items will be delivered after successful payment verification.
-> • Sharing or abusing paid perks may result in punishment or removal of perks.
-> • Chargebacks or fraudulent payments will result in a permanent blacklist from the server and store.
+## <a:store_a:1507788568322375690> **9. Store & Rank Purchase Policy**
+<a:red_arrow:1507787736554410126> All purchases made through the official server store are final.
+<a:red_arrow:1507787736554410126> Purchased ranks, kits, or items will be delivered after successful payment verification.
+<a:red_arrow:1507787736554410126> Sharing or abusing paid perks may result in punishment or removal of perks.
+<a:red_arrow:1507787736554410126> Chargebacks or fraudulent payments will result in a permanent blacklist from the server and store.
 
 ━━━━━━━━━━━━━━
 
-## ❌ **10. Refund Policy**
-> • No refunds will be given after ranks, items, or perks are delivered.
-> • Accidental purchases are the buyer’s responsibility.
-> • Breaking server rules after purchasing does NOT make you eligible for a refund.
-> • If you experience delivery issues, contact staff with valid proof.
+## <a:disclaimer_a:1507787788526026852> **10. Refund Policy**
+<a:red_arrow:1507787736554410126> No refunds will be given after ranks, items, or perks are delivered.
+<a:red_arrow:1507787736554410126> Accidental purchases are the buyer’s responsibility.
+<a:red_arrow:1507787736554410126> Breaking server rules after purchasing does NOT make you eligible for a refund.
+<a:red_arrow:1507787736554410126>  If you experience delivery issues, contact staff with valid proof.
 
 ━━━━━━━━━━━━━━
 
-## ⚖️ **11. Punishment System**
-> • Warning
-> • Mute
-> • Kick
-> • Temporary Ban
-> • Permanent Ban
+## <a:disclaimer_a:1507787788526026852> **11. Punishment System**
+<a:red_arrow:1507787736554410126> Warning
+<a:red_arrow:1507787736554410126> Mute
+<a:red_arrow:1507787736554410126> Kick
+<a:red_arrow:1507787736554410126> Temporary Ban
+<a:red_arrow:1507787736554410126> Permanent Ban
 
-> Severe violations such as hacking, duping, scamming, or chargebacks may result in immediate permanent punishment without warning.
-
-━━━━━━━━━━━━━━
-
-## 🧠 **12. Use Common Sense**
-> Not every situation can be covered by rules. Use common sense and respect staff decisions to help maintain a positive and fair community.
+<a:red_arrow:1507787736554410126> Severe violations such as hacking, duping, scamming, or chargebacks may result in immediate permanent punishment without warning.
 
 ━━━━━━━━━━━━━━
 
-# 🌟 Welcome to Eternal SMP 🌟
+## <a:announcement_a:1507790462210281482> **12. Use Common Sense**
+<a:red_arrow:1507787736554410126> Not every situation can be covered by rules. Use common sense and respect staff decisions to help maintain a positive and fair community.
+
+━━━━━━━━━━━━━━
+
+# **<a:twinkle_twinkle:1507788149030392000> Welcome to Eternal SMP <a:twinkle_twinkle:1507788149030392000>**
 `)
       .setThumbnail(THUMBNAIL)
       .setImage(BANNER)
