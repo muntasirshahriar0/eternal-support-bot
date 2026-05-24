@@ -167,7 +167,6 @@ client.on("messageCreate", async (message) => {
 
 # **<a:twinkle_twinkle:1507788149030392000> Welcome to Eternal SMP <a:twinkle_twinkle:1507788149030392000>**
 `)
-      .setThumbnail(THUMBNAIL)
       .setImage(BANNER)
       .setFooter({
         text: "Eternal SMP Rules"
