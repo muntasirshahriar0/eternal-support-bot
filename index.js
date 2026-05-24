@@ -182,7 +182,7 @@ client.on("messageCreate", async (message) => {
 /* =========================
    .IGNRULES COMMAND
 ========================= */
-if (msg === ".ignrules") {
+if (msg === ".grules") {
 
   const embed = new EmbedBuilder()
     .setColor(0x8600FF)
@@ -230,8 +230,27 @@ if (msg === ".ignrules") {
 <a:red_arrow:1507787736554410126> No Pretending to Be Staff
 <a:red_arrow:1507787736554410126> No Ban Evasion
 <a:red_arrow:1507787736554410126> Use Common Sense
+`)
+    .setImage(BANNER)
+    .setFooter({
+      text: "Eternal SMP In-Game Rules"
+    })
+    .setTimestamp();
 
+  return message.channel.send({
+    embeds: [embed]
+  });
+}
 
+  /* =========================
+   .PUNISHMENTS COMMAND
+========================= */
+if (msg === ".punishments") {
+
+  const embed = new EmbedBuilder()
+    .setColor(0x8600FF)
+    .setTitle("⚖️ Eternal SMP • Punishment Guide")
+    .setDescription(`
 ━━━━━━━━━━━━━━━━━━━━━━━━
 # **<a:announcement_a:1507790462210281482> Punishment Guide**
 ━━━━━━━━━━━━━━━━━━━━━━━━
