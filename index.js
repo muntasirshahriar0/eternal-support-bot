@@ -167,6 +167,7 @@ client.on("messageCreate", async (message) => {
 
 # **<a:twinkle_twinkle:1507788149030392000> Welcome to Eternal SMP <a:twinkle_twinkle:1507788149030392000>**
 `)
+      .setThumbnail(THUMBNAIL)
       .setImage(BANNER)
       .setFooter({
         text: "Eternal SMP Rules"
@@ -177,7 +178,138 @@ client.on("messageCreate", async (message) => {
       embeds: [embed]
     });
   }
+  
+/* =========================
+   .IGNRULES COMMAND
+========================= */
+if (msg === ".ignrules") {
 
+  const embed = new EmbedBuilder()
+    .setColor(0x8600FF)
+    .setTitle("<a:disclaimer_a:1507787788526026852> Eternal SMP • In-Game Rules")
+    .setDescription(` 
+# **<a:disclaimer_a:1507787788526026852> Minecraft Server Rules**
+━━━━━━━━━━━━━━━━━━━━━━━━
+
+<a:red_arrow:1507787736554410126> No Hacked Clients
+<a:red_arrow:1507787736554410126> No Movement Mods
+<a:red_arrow:1507787736554410126> No Inventory Mods
+<a:red_arrow:1507787736554410126> No Health Indicators
+<a:red_arrow:1507787736554410126> No Radar
+<a:red_arrow:1507787736554410126> No Freecam
+<a:red_arrow:1507787736554410126> No ESP
+<a:red_arrow:1507787736554410126> No Auto Place / Easy Place
+<a:red_arrow:1507787736554410126> No Macros or Scripts
+<a:red_arrow:1507787736554410126> No Auto Clickers
+<a:red_arrow:1507787736554410126> No Mouse Tweaks / Scrollers
+<a:red_arrow:1507787736554410126> No Crafting Modifications
+<a:red_arrow:1507787736554410126> No Bug Abuse
+<a:red_arrow:1507787736554410126> No Attempted Duplication
+<a:red_arrow:1507787736554410126> No Item Duplication
+<a:red_arrow:1507787736554410126> No IRL Trading
+<a:red_arrow:1507787736554410126> No External Gambling
+<a:red_arrow:1507787736554410126> No Cross-Server Trading
+<a:red_arrow:1507787736554410126> No Staff Impersonation
+<a:red_arrow:1507787736554410126> No More Than 3 Accounts Per Player
+<a:red_arrow:1507787736554410126> No Finding or Using the Server Seed
+<a:red_arrow:1507787736554410126> No Voice Chat Spam
+<a:red_arrow:1507787736554410126> Report All Bugs, Glitches & Cheaters
+<a:red_arrow:1507787736554410126> No Auto Totem
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━
+# **<a:magic_book:1507790392945410299> Chat Rules**
+━━━━━━━━━━━━━━━━━━━━━━━━
+
+<a:red_arrow:1507787736554410126> No Spamming
+<a:red_arrow:1507787736554410126> No Encouraging Others to Spam
+<a:red_arrow:1507787736554410126> No Harassment
+<a:red_arrow:1507787736554410126> No Discrimination or Hate Speech
+<a:red_arrow:1507787736554410126> No Death Threats
+<a:red_arrow:1507787736554410126> No Sharing Personal Information
+<a:red_arrow:1507787736554410126> No Pretending to Be Staff
+<a:red_arrow:1507787736554410126> No Ban Evasion
+<a:red_arrow:1507787736554410126> Use Common Sense
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━
+# **<a:announcement_a:1507790462210281482> Punishment Guide**
+━━━━━━━━━━━━━━━━━━━━━━━━
+
+<a:red_arrow:1507787736554410126> Most violations will result in a Warning first.
+
+<a:red_arrow:1507787736554410126> Repeated violations may result in Mutes, Jail, Position Freeze, Inventory Clears, Temporary Bans, or Permanent Bans.
+
+━━━━━━━━━━━━━━
+
+<a:red_arrow:1507787736554410126> Chat Spam
+Warning → Mute → Temporary Ban
+
+<a:red_arrow:1507787736554410126> Harassment, Toxicity & Hate Speech
+Warning → Mute → Temporary Ban → Permanent Ban
+
+<a:red_arrow:1507787736554410126> Staff Impersonation
+Warning → Temporary Ban → Permanent Ban
+
+<a:red_arrow:1507787736554410126> Ban Evasion
+Permanent Ban
+
+<a:red_arrow:1507787736554410126> IRL Trading
+Warning → Temporary Ban → Permanent Ban
+
+<a:red_arrow:1507787736554410126> External Gambling
+Warning → Temporary Ban → Permanent Ban
+
+<a:red_arrow:1507787736554410126> Cross-Server Trading
+Warning → Temporary Ban → Permanent Ban
+
+<a:red_arrow:1507787736554410126> Using More Than 3 Accounts
+Warning → Temporary Ban → Permanent Ban
+
+<a:red_arrow:1507787736554410126> Bug Abuse
+Warning → Inventory Clear → Temporary Ban → Permanent Ban
+
+<a:red_arrow:1507787736554410126> Attempted Duplication
+Warning → Inventory Clear → Temporary Ban → Permanent Ban
+
+<a:red_arrow:1507787736554410126> Item Duplication
+Inventory Clear → Temporary Ban → Permanent Ban
+
+<a:red_arrow:1507787736554410126> Auto Totem, Macros, Scripts & Auto Clickers
+Warning → Temporary Ban → Permanent Ban
+
+<a:red_arrow:1507787736554410126> Hacked Clients, ESP, Freecam, Radar & Similar Cheats
+Temporary Ban → Permanent Ban
+
+<a:red_arrow:1507787736554410126> Server Seed Finding or Usage
+Temporary Ban → Permanent Ban
+
+<a:red_arrow:1507787736554410126> Severe Exploits Affecting the Economy
+Inventory Clear → Temporary Ban → Permanent Ban
+
+━━━━━━━━━━━━━━━━━━━━━━━━
+# **<a:disclaimer_a:1507787788526026852> Final Notice**
+━━━━━━━━━━━━━━━━━━━━━━━━
+
+<a:arrow:1507782135212150845> Staff may issue harsher punishments immediately for severe offenses.
+
+<a:arrow:1507782135212150845> Punishments are based on evidence, severity, and previous violations.
+
+<a:arrow:1507782135212150845> Use common sense and respect staff decisions. Staff decision will be considered as the final desicion.
+
+━━━━━━━━━━━━━━
+`)
+    .setImage(BANNER)
+    .setFooter({
+      text: "Eternal SMP In-Game Rules"
+    })
+    .setTimestamp();
+
+  return message.channel.send({
+    embeds: [embed]
+  });
+}
+  
   /* =========================
      .TAC COMMAND
   ========================= */
