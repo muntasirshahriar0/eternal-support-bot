@@ -441,7 +441,7 @@ Your support helps keep the server alive, balanced, and growing for the entire c
 
 <a:moneyyyy:1507792459974054118>  In-game Money: 500K  
 <a:red_arrow:1507787736554410126> 6 SetHomes  
-<a:red_arrow:1507787736554410126> KNIGHT ARMOR (Vanilla Without Enchants) Tools (Vanilla Without Enchants) 
+<a:red_arrow:1507787736554410126> KNIGHT ARMOR (Vanilla Without Enchants) 
 <a:red_arrow:1507787736554410126> KNIGHT TOOLS (Vanilla Without Enchants)
 <a:red_arrow:1507787736554410126> 6 Shulker  
 <a:red_arrow:1507787736554410126> 90 Golden Apple + 12 Enchanted Golden Apple  
