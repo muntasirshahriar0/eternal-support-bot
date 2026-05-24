@@ -267,7 +267,6 @@ Eternal SMP reserves the right to modify gameplay systems, economy features, ran
 Your support helps keep the server alive, balanced, and growing for the entire community. <a:fire_a0:1507790340067950794>**
 ━━━━━━━━━━━━━━━━━━━━━━
 `)
-      .setThumbnail(THUMBNAIL)
       .setImage(BANNER)
       .setFooter({
         text: "Eternal SMP Store Terms"
@@ -380,7 +379,6 @@ Your support helps keep the server alive, balanced, and growing for the entire c
 
 **<a:moneyyyy:1507792459974054118> PRICE – 2 Server Boost**
       `)
-      .setThumbnail(THUMBNAIL)
       .setImage(BANNER)
       .setFooter({ text: "Eternal SMP Rank System" })
       .setTimestamp();
@@ -456,7 +454,6 @@ Your support helps keep the server alive, balanced, and growing for the entire c
 <a:red_arrow:1507787736554410126> Open a ticket in the support channel
 <a:red_arrow:1507787736554410126> Tell staff which spawner you want
 `)
-      .setThumbnail(THUMBNAIL)
       .setImage(BANNER)
       .setFooter({
         text: "Eternal SMP Spawner Shop"
