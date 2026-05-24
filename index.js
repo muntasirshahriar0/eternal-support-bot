@@ -191,6 +191,7 @@ if (msg === ".grules") {
 # **<a:disclaimer_a:1507787788526026852> Minecraft Server Rules**
 ━━━━━━━━━━━━━━━━━━━━━━━━
 
+<a:red_arrow:1507787736554410126> No More Than 3 Accounts Per Player
 <a:red_arrow:1507787736554410126> No Hacked Clients
 <a:red_arrow:1507787736554410126> No Movement Mods
 <a:red_arrow:1507787736554410126> No Inventory Mods
@@ -210,7 +211,6 @@ if (msg === ".grules") {
 <a:red_arrow:1507787736554410126> No External Gambling
 <a:red_arrow:1507787736554410126> No Cross-Server Trading
 <a:red_arrow:1507787736554410126> No Staff Impersonation
-<a:red_arrow:1507787736554410126> No More Than 3 Accounts Per Player
 <a:red_arrow:1507787736554410126> No Finding or Using the Server Seed
 <a:red_arrow:1507787736554410126> No Voice Chat Spam
 <a:red_arrow:1507787736554410126> Report All Bugs, Glitches & Cheaters
@@ -249,10 +249,10 @@ if (msg === ".punishments") {
 
   const embed = new EmbedBuilder()
     .setColor(0x8600FF)
-    .setTitle("⚖️ Eternal SMP • Punishment Guide")
+    .setTitle("⚖️ Eternal SMP • Punishment System")
     .setDescription(`
 ━━━━━━━━━━━━━━━━━━━━━━━━
-# **<a:announcement_a:1507790462210281482> Punishment Guide**
+# **<a:announcement_a:1507790462210281482> Punishment System**
 ━━━━━━━━━━━━━━━━━━━━━━━━
 
 <a:red_arrow:1507787736554410126> Most violations will result in a Warning first.
