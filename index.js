@@ -1,6 +1,11 @@
 const {
   Client,
   GatewayIntentBits,
+  ChannelType,
+  PermissionsBitField,
+  ActionRowBuilder,
+  ButtonBuilder,
+  ButtonStyle,
   EmbedBuilder
 } = require("discord.js");
 
@@ -29,13 +34,20 @@ const THUMBNAIL =
   "https://cdn.discordapp.com/attachments/1504463263872712924/1507723134168600706/1000016387-ezremove.gif?ex=6a12f017&is=6a119e97&hm=63b632930132afd31b0604d72f37c6f90cfe6e294bb7be7336379d846b8ac9a6&";
 
 /* =========================
+   CHANNEL IDS
+========================= */
+const WELCOME_CHANNEL_ID = "1504121883841270032";
+const GOODBYE_CHANNEL_ID = "1504122077966368919";
+
+/* =========================
    DISCORD CLIENT
 ========================= */
 const client = new Client({
   intents: [
     GatewayIntentBits.Guilds,
     GatewayIntentBits.GuildMessages,
-    GatewayIntentBits.MessageContent
+    GatewayIntentBits.MessageContent,
+    GatewayIntentBits.GuildMembers
   ]
 });
 
@@ -617,6 +629,206 @@ Your support helps keep the server alive, balanced, and growing for the entire c
 
 }); 
 
+/* =========================
+   TICKET COMMAND
+========================= */
+if (msg === ".panel") {
+
+  const embed = new EmbedBuilder()
+    .setColor(0x8600FF)
+    .setTitle("🎟️ Eternal SMP Support Center")
+    .setDescription(
+      "Click below to create a ticket.\n\n" +
+      "🛠️ Technical support\n" +
+      "💰 Payment help\n" +
+      "⚠️ Reports / Appeals"
+    )
+    .setImage(BANNER)
+    .setThumbnail(THUMBNAIL)
+    .setFooter({ text: "Support System" })
+    .setTimestamp();
+
+  const button = new ButtonBuilder()
+    .setCustomId("create_ticket")
+    .setLabel("Create Ticket")
+    .setEmoji("🎫")
+    .setStyle(ButtonStyle.Primary);
+
+  const row = new ActionRowBuilder().addComponents(button);
+
+  return message.channel.send({
+    embeds: [embed],
+    components: [row]
+  });
+  
+  client.on("interactionCreate", async (interaction) => {
+
+  if (!interaction.isButton()) return;
+
+  /* =========================
+     CREATE TICKET
+  ========================= */
+  if (interaction.customId === "create_ticket") {
+
+    const channel = await interaction.guild.channels.create({
+      name: `ticket-${interaction.user.username}`,
+      type: ChannelType.GuildText,
+      permissionOverwrites: [
+        {
+          id: interaction.guild.id,
+          deny: [PermissionsBitField.Flags.ViewChannel],
+        },
+        {
+          id: interaction.user.id,
+          allow: [
+            PermissionsBitField.Flags.ViewChannel,
+            PermissionsBitField.Flags.SendMessages,
+            PermissionsBitField.Flags.ReadMessageHistory
+          ],
+        },
+        {
+          id: interaction.client.user.id,
+          allow: [
+            PermissionsBitField.Flags.ViewChannel,
+            PermissionsBitField.Flags.SendMessages,
+            PermissionsBitField.Flags.ManageChannels
+          ],
+        }
+      ],
+    });
+
+    const embed = new EmbedBuilder()
+      .setColor(0x8600FF)
+      .setTitle("🎫 Ticket Created")
+      .setDescription(`Hello ${interaction.user}, explain your issue here.`)
+      .setImage(BANNER)
+      .setTimestamp();
+
+    const close = new ButtonBuilder()
+      .setCustomId("close_ticket")
+      .setLabel("Close Ticket")
+      .setStyle(ButtonStyle.Danger);
+
+    const row = new ActionRowBuilder().addComponents(close);
+
+    await channel.send({
+      embeds: [embed],
+      components: [row]
+    });
+
+    return interaction.reply({
+      content: `Ticket created: ${channel}`,
+      ephemeral: true
+    });
+  }
+
+  /* =========================
+     CLOSE TICKET
+  ========================= */
+  if (interaction.customId === "close_ticket") {
+
+    await interaction.reply({
+      content: "Closing ticket...",
+      ephemeral: true
+    });
+
+    setTimeout(() => {
+      interaction.channel.delete().catch(() => {});
+    }, 3000);
+  }
+});
+}
+
+/* =========================
+   WELCOME
+========================= */
+client.on("guildMemberAdd", async (member) => {
+
+  const channel = await client.channels
+    .fetch(WELCOME_CHANNEL_ID)
+    .catch(() => null);
+
+  if (!channel) return;
+
+  await channel.send(`welcome, ${member}!`);
+
+  const memberCount = member.guild.memberCount;
+
+  const embed = new EmbedBuilder()
+    .setColor(0x8600FF)
+    .setAuthor({
+      name: member.user.username,
+      iconURL: member.user.displayAvatarURL()
+    })
+    .setTitle("🎉 Welcome to Eternal SMP!")
+    .setDescription(
+      `DONT FORGET TO CHECK OUT!\n\n` +
+
+      `💬 **[Chats](https://discord.com/channels/1504100985197301802/1504100985646350485)**\n` +
+      `🎭 **[Roles](https://discord.com/channels/1504100985197301802/1504127493131469000)**\n` +
+      `📜 **[Rules](https://discord.com/channels/1504100985197301802/1504100985646350480)**\n` +
+      `📢 **[Announcements](https://discord.com/channels/1504100985197301802/1504100985646350481)**\n` +
+      `⚖️ **[In Game Rules](https://discord.com/channels/1504100985197301802/1504100986086490157)**\n` +
+      `⚖️ **[Punishment System](https://discord.com/channels/1504100985197301802/1508164377860116561)**\n` +
+      `📖 **[Terms And Condition](https://discord.com/channels/1504100985197301802/1506543092126191726)**\n` +
+      `🎫 **[Ticket](https://discord.com/channels/1504100985197301802/1504121282822934670)**\n\n` +
+
+      `✨ We hope you enjoy your stay!`
+    )
+    .setThumbnail(member.user.displayAvatarURL({ dynamic: true }))
+    .setImage(BANNER)
+    .setFooter({
+      text: `you are our ${memberCount}th member!`
+    })
+    .setTimestamp();
+
+  channel.send({ embeds: [embed] }).catch(() => {});
+});
+
+/* =========================
+   GOODBYE
+========================= */
+client.on("guildMemberRemove", async (member) => {
+
+  console.log(`${member.user.tag} left the server`);
+
+  const channel = await client.channels
+    .fetch(GOODBYE_CHANNEL_ID)
+    .catch(console.error);
+
+  if (!channel) return;
+
+  channel.send({
+    content: `oh no... bye, ${member.user.username}`
+  }).catch(console.error);
+
+  const embed = new EmbedBuilder()
+    .setColor(0xED4245)
+    .setAuthor({
+      name: member.user.username,
+      iconURL: member.user.displayAvatarURL({ dynamic: true })
+    })
+    .setTitle("👋 Goodbye from Eternal SMP")
+    .setDescription(
+      `${member.user.username} has left Eternal SMP...\n\n` +
+      "💔 We're sad to see you go\n" +
+      "🎮 Hope you enjoyed your time here\n" +
+      "🌍 You're always welcome back!"
+    )
+    .setThumbnail(
+      member.user.displayAvatarURL({ dynamic: true })
+    )
+    .setImage(BANNER)
+    .setFooter({
+      text: `we now have ${member.guild.memberCount} members...`
+    })
+    .setTimestamp();
+
+  channel.send({
+    embeds: [embed]
+  }).catch(console.error);
+
+});
 
 /* =========================
    LOGIN
