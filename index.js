@@ -657,9 +657,10 @@ if (msg === ".panel") {
   return message.channel.send({
     embeds: [embed],
     components: [row]
-  });
-}
+      });
+  }
 
+});
 /* =========================
    TICKET INTERACTIONS
 ========================= */
