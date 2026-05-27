@@ -655,11 +655,13 @@ if (msg === ".panel") {
   const row = new ActionRowBuilder().addComponents(button);
 
   return message.channel.send({
-    embeds: [embed],
-    components: [row]
-  });
-}
+      embeds: [embed],
+      components: [row]
+    });
+  }
 
+});
+  
 /* =========================
    TICKET INTERACTIONS
 ========================= */
@@ -790,15 +792,13 @@ client.on("guildMemberAdd", async (member) => {
    GOODBYE SYSTEM
 ========================= */
 client.on("guildMemberRemove", async (member) => {
-
   try {
-
     console.log(`${member.user.tag} left the server`);
 
-    const channel = client.channels.cache.get(GOODBYE_CHANNEL_ID);
+    const channel = await client.channels.fetch(GOODBYE_CHANNEL_ID).catch(() => null);
 
     if (!channel) {
-      console.log("❌ Goodbye channel not found");
+      console.log("❌ Goodbye channel not found or not accessible");
       return;
     }
 
@@ -819,9 +819,7 @@ client.on("guildMemberRemove", async (member) => {
         "🎮 Hope you enjoyed your time here\n" +
         "🌍 You're always welcome back!"
       )
-      .setThumbnail(
-        member.user.displayAvatarURL({ extension: "png", size: 1024 })
-      )
+      .setThumbnail(member.user.displayAvatarURL({ extension: "png", size: 1024 }))
       .setImage(BANNER)
       .setFooter({
         text: `We now have ${member.guild.memberCount} members`
@@ -833,7 +831,6 @@ client.on("guildMemberRemove", async (member) => {
   } catch (err) {
     console.error("❌ Goodbye system error:", err);
   }
-
 });
   
 /* =========================
