@@ -787,53 +787,6 @@ client.on("guildMemberAdd", async (member) => {
 
   channel.send({ embeds: [embed] }).catch(() => {});
 });
-
-/* =========================
-   GOODBYE
-========================= */
-client.on("guildMemberRemove", async (member) => {
-  try {
-
-    console.log(`${member.user.tag} left the server`);
-
-    const channel = member.guild.channels.cache.get(GOODBYE_CHANNEL_ID)
-      || await member.guild.channels.fetch(GOODBYE_CHANNEL_ID).catch(() => null);
-
-    if (!channel) {
-      console.log("❌ Goodbye channel not found");
-      return;
-    }
-
-    await channel.send({
-      content: `👋 Oh no... ${member.user.username} left Eternal SMP`
-    });
-
-    const embed = new EmbedBuilder()
-      .setColor(0xED4245)
-      .setAuthor({
-        name: member.user.username,
-        iconURL: member.user.displayAvatarURL({ extension: "png", size: 1024 })
-      })
-      .setTitle("👋 Goodbye from Eternal SMP, We had a good time with you.")
-      .setDescription(
-        `${member.user.username} has left Eternal SMP...\n\n` +
-        "💔 We're sad to see you go\n" +
-        "🎮 Hope you enjoyed your time here\n" +
-        "🌍 You're always welcome back!"
-      )
-      .setThumbnail(member.user.displayAvatarURL({ extension: "png", size: 1024 }))
-      .setImage(BANNER)
-      .setFooter({
-        text: `We now have ${member.guild.memberCount} members`
-      })
-      .setTimestamp();
-
-    await channel.send({ embeds: [embed] });
-
-  } catch (err) {
-    console.error("❌ Goodbye system error:", err);
-  }
-});
   
 /* =========================
    LOGIN
