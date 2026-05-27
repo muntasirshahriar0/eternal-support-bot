@@ -28,10 +28,10 @@ app.listen(process.env.PORT || 3000, () => {
    IMAGES
 ========================= */
 const BANNER =
-  "https://cdn.discordapp.com/attachments/1504463263872712924/1507723264141692968/1000016350-ezremove.gif?ex=6a12f036&is=6a119eb6&hm=751c3665f5dc87b082a5eb77fab204385963005079233755f92770713835501c&";
+  "https://cdn.discordapp.com/attachments/1508843787064185103/1509148139024547891/1000016350-ezremove.gif?ex=6a181f3a&is=6a16cdba&hm=e14c4ae7628e82a918334f96f5f5db5401a2f474801519145a2194f0bd0ae53e&";
 
 const THUMBNAIL =
-  "https://cdn.discordapp.com/attachments/1504463263872712924/1507723134168600706/1000016387-ezremove.gif?ex=6a12f017&is=6a119e97&hm=63b632930132afd31b0604d72f37c6f90cfe6e294bb7be7336379d846b8ac9a6&";
+  "https://cdn.discordapp.com/attachments/1508843787064185103/1509148049375498260/1000016387-ezremove.gif?ex=6a181f25&is=6a16cda5&hm=f50b3cd0602727d2db53802bfb335d2e24757b2f79f355ea07f7668b801ed60f&";
 
 /* =========================
    CHANNEL IDS
@@ -657,10 +657,8 @@ if (msg === ".panel") {
   return message.channel.send({
     embeds: [embed],
     components: [row]
-      });
-  }
-
-});
+  });
+}
 
 /* =========================
    TICKET INTERACTIONS
@@ -789,50 +787,55 @@ client.on("guildMemberAdd", async (member) => {
 });
 
 /* =========================
-   GOODBYE
+   GOODBYE SYSTEM
 ========================= */
 client.on("guildMemberRemove", async (member) => {
 
-  console.log(`${member.user.tag} left the server`);
+  try {
 
-  const channel = await client.channels
-    .fetch(GOODBYE_CHANNEL_ID)
-    .catch(console.error);
+    console.log(`${member.user.tag} left the server`);
 
-  if (!channel) return;
+    const channel = client.channels.cache.get(GOODBYE_CHANNEL_ID);
 
-  channel.send({
-    content: `oh no... bye, ${member.user.username}`
-  }).catch(console.error);
+    if (!channel) {
+      console.log("❌ Goodbye channel not found");
+      return;
+    }
 
-  const embed = new EmbedBuilder()
-    .setColor(0xED4245)
-    .setAuthor({
-      name: member.user.username,
-      iconURL: member.user.displayAvatarURL({ dynamic: true })
-    })
-    .setTitle("👋 Goodbye from Eternal SMP")
-    .setDescription(
-      `${member.user.username} has left Eternal SMP...\n\n` +
-      "💔 We're sad to see you go\n" +
-      "🎮 Hope you enjoyed your time here\n" +
-      "🌍 You're always welcome back!"
-    )
-    .setThumbnail(
-      member.user.displayAvatarURL({ dynamic: true })
-    )
-    .setImage(BANNER)
-    .setFooter({
-      text: `we now have ${member.guild.memberCount} members...`
-    })
-    .setTimestamp();
+    await channel.send({
+      content: `👋 Oh no... ${member.user.username} left Eternal SMP`
+    });
 
-  channel.send({
-    embeds: [embed]
-  }).catch(console.error);
+    const embed = new EmbedBuilder()
+      .setColor(0xED4245)
+      .setAuthor({
+        name: member.user.username,
+        iconURL: member.user.displayAvatarURL({ extension: "png", size: 1024 })
+      })
+      .setTitle("👋 Goodbye from Eternal SMP")
+      .setDescription(
+        `${member.user.username} has left Eternal SMP...\n\n` +
+        "💔 We're sad to see you go\n" +
+        "🎮 Hope you enjoyed your time here\n" +
+        "🌍 You're always welcome back!"
+      )
+      .setThumbnail(
+        member.user.displayAvatarURL({ extension: "png", size: 1024 })
+      )
+      .setImage(BANNER)
+      .setFooter({
+        text: `We now have ${member.guild.memberCount} members`
+      })
+      .setTimestamp();
+
+    await channel.send({ embeds: [embed] });
+
+  } catch (err) {
+    console.error("❌ Goodbye system error:", err);
+  }
 
 });
-
+  
 /* =========================
    LOGIN
 ========================= */
