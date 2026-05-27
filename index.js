@@ -789,48 +789,48 @@ client.on("guildMemberAdd", async (member) => {
 });
 
 /* =========================
-   GOODBYE SYSTEM
+   GOODBYE
 ========================= */
 client.on("guildMemberRemove", async (member) => {
-  try {
-    console.log(`${member.user.tag} left the server`);
 
-    const channel = await client.channels.fetch(GOODBYE_CHANNEL_ID).catch(() => null);
+  console.log(`${member.user.tag} left the server`);
 
-    if (!channel) {
-      console.log("❌ Goodbye channel not found or not accessible");
-      return;
-    }
+  const channel = await client.channels
+    .fetch(GOODBYE_CHANNEL_ID)
+    .catch(console.error);
 
-    await channel.send({
-      content: `👋 Oh no... ${member.user.username} left Eternal SMP`
-    });
+  if (!channel) return;
 
-    const embed = new EmbedBuilder()
-      .setColor(0xED4245)
-      .setAuthor({
-        name: member.user.username,
-        iconURL: member.user.displayAvatarURL({ extension: "png", size: 1024 })
-      })
-      .setTitle("👋 Goodbye from Eternal SMP")
-      .setDescription(
-        `${member.user.username} has left Eternal SMP...\n\n` +
-        "💔 We're sad to see you go\n" +
-        "🎮 Hope you enjoyed your time here\n" +
-        "🌍 You're always welcome back!"
-      )
-      .setThumbnail(member.user.displayAvatarURL({ extension: "png", size: 1024 }))
-      .setImage(BANNER)
-      .setFooter({
-        text: `We now have ${member.guild.memberCount} members`
-      })
-      .setTimestamp();
+  channel.send({
+    content: `oh no... bye, ${member.user.username}`
+  }).catch(console.error);
 
-    await channel.send({ embeds: [embed] });
+  const embed = new EmbedBuilder()
+    .setColor(0xED4245)
+    .setAuthor({
+      name: member.user.username,
+      iconURL: member.user.displayAvatarURL({ dynamic: true })
+    })
+    .setTitle("👋 Goodbye from Eternal SMP, We had a good time with you.")
+    .setDescription(
+      `${member.user.username} has left Eternal SMP...\n\n` +
+      "💔 We're sad to see you go\n" +
+      "🎮 Hope you enjoyed your time here\n" +
+      "🌍 You're always welcome back!"
+    )
+    .setThumbnail(
+      member.user.displayAvatarURL({ dynamic: true })
+    )
+    .setImage(BANNER)
+    .setFooter({
+      text: `we now have ${member.guild.memberCount} members...`
+    })
+    .setTimestamp();
 
-  } catch (err) {
-    console.error("❌ Goodbye system error:", err);
-  }
+  channel.send({
+    embeds: [embed]
+  }).catch(console.error);
+
 });
   
 /* =========================
