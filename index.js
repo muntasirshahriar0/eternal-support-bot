@@ -627,8 +627,6 @@ Your support helps keep the server alive, balanced, and growing for the entire c
     });
   }
 
-}); 
-
 /* =========================
    .PANEL PANEL COMMAND
 ========================= */
