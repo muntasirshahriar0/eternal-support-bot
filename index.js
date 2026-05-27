@@ -630,7 +630,7 @@ Your support helps keep the server alive, balanced, and growing for the entire c
 }); 
 
 /* =========================
-   TICKET COMMAND
+   .PANEL PANEL COMMAND
 ========================= */
 if (msg === ".panel") {
 
@@ -660,8 +660,12 @@ if (msg === ".panel") {
     embeds: [embed],
     components: [row]
   });
-  
-  client.on("interactionCreate", async (interaction) => {
+}
+
+/* =========================
+   TICKET INTERACTIONS
+========================= */
+client.on("interactionCreate", async (interaction) => {
 
   if (!interaction.isButton()) return;
 
@@ -737,7 +741,6 @@ if (msg === ".panel") {
     }, 3000);
   }
 });
-}
 
 /* =========================
    WELCOME
